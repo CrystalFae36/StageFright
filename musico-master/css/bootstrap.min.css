@@ -6903,7 +6903,11 @@ button.bg-dark:hover {
 .align-items-center {
     -webkit-box-align: center!important;
     -ms-flex-align: center!important;
-    align-items: center!important
+    align-items: center!important;
+    padding: 50px 0;
+    border-top: 1px dotted #eee;
+    margin-right: -15px;
+    margin-left: -15px
 }
 
 .align-items-baseline {
