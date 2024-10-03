@@ -1425,10 +1425,16 @@ h3 {
   font-weight: 600;
   margin-bottom: 0;
 }
-
+.age{
+  font-style:italic;
+  font-size:16px;
+  color: #727272;
+  font-weight: 400;
+  margin-top: 9px;
+}
 /* line 28, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .about_area .about_info p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   margin-top: 17px;
   margin-bottom: 40px;
