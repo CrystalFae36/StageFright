@@ -5649,6 +5649,7 @@ h6 {
 /* line 1086, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .mt-10 {
   margin-top: 10px;
+  margin-bottom:10px;
 }
 
 /* line 1089, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
@@ -6027,6 +6028,11 @@ h6 {
 
 /* End Causes Area css
 ============================================================================================ */
+.form-area{
+  padding-top:35px;
+  padding-bottom:35px;
+}
+
 /*================= latest_blog_area css =============*/
 /* line 374, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .latest_blog_area {
@@ -6222,11 +6228,8 @@ h6 {
 .blog-info-link li {
   float: left;
   font-size: 14px;
-}
-
-/* line 567, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
-.blog-info-link li a {
   color: #999999;
+  font-style:italic;
 }
 
 /* line 571, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
