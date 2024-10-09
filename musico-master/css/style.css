@@ -76,7 +76,7 @@ button {
 /* line 41, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Josefin Sans", sans-serif;
-  color: #001D38;
+  color: #ff0d0d;
 }
 
 /* line 45, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
@@ -2021,7 +2021,7 @@ h3 {
   padding-bottom: 50px;
   border-bottom: 1px solid #EFEFEF;
   padding-top: 145px;
-  background: #fff;
+  background: #242424;
 }
 
 @media (max-width: 767px) {
@@ -4743,7 +4743,7 @@ h6 {
 
 /* line 357, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .progress-table {
-  background: #f9f9ff;
+  background: #242424;
   padding: 15px 0px 30px 0px;
   min-width: 800px;
 }
@@ -4780,7 +4780,7 @@ h6 {
 .progress-table .table-head .country,
 .progress-table .table-head .visit,
 .progress-table .table-head .percentage {
-  color: #415094;
+  color: #ff0d0d;
   line-height: 40px;
   text-transform: uppercase;
   font-weight: 500;
@@ -5682,7 +5682,7 @@ h6 {
 
 /* line 10, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_area a {
-  color: #666666 !important;
+  color: #2b2b2b !important;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -5690,7 +5690,7 @@ h6 {
 
 /* line 14, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_area a:hover, .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #615CFD 0%, #615CFD 99%);
+  background: -webkit-linear-gradient(131deg, #f31717 0%, #a00000 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -6270,8 +6270,8 @@ h6 {
   bottom: -10px;
   left: 10px;
   display: block;
-  color: #fff;
-  background-color: #615CFD;
+  color: #ffffff;
+  background-color: #ff0d0d;
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -6289,7 +6289,7 @@ h6 {
 .blog_item_img .blog_item_date h3 {
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 0;
   line-height: 1.2;
 }
