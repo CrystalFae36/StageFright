@@ -6185,7 +6185,8 @@ h6 {
 /* line 529, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_details {
   padding: 30px 0 20px 10px;
-  box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  background-color:#131313
 }
 
 @media (min-width: 768px) {
@@ -6327,12 +6328,12 @@ h6 {
   content: "";
   display: block;
   padding-top: 15px;
-  border-bottom: 1px solid #f0e9ff;
+  border-bottom: 1px solid #111111;
 }
 
 /* line 660, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_right_sidebar .single_sidebar_widget {
-  background: #fbf9ff;
+  background: #131313;
   padding: 30px;
   margin-bottom: 30px;
 }
@@ -6384,28 +6385,28 @@ h6 {
 /* line 713, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_right_sidebar .newsletter_widget .form-control {
   height: 50px;
-  border-color: #f0e9ff;
+  border-color: #353535;
   font-size: 13px;
-  color: #999999;
+  color: #fafafa;
   padding-left: 20px;
   border-radius: 0;
 }
 
 /* line 722, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_right_sidebar .newsletter_widget .form-control::placeholder {
-  color: #999999;
+  color: #fafafa;
 }
 
 /* line 726, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_right_sidebar .newsletter_widget .form-control:focus {
-  border-color: #f0e9ff;
+  border-color: #353535;
   outline: 0;
   box-shadow: none;
 }
 
 /* line 735, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_right_sidebar .newsletter_widget .input-group button {
-  background: #fff;
+  background: #272727;
   border-left: 0;
   border: 1px solid #f0e9ff;
   padding: 4px 15px;
@@ -6552,6 +6553,7 @@ h6 {
   color: #8a8a8a;
   border: 1px solid #f0e9ff;
   margin-right: 10px;
+  background-color:#131313
 }
 
 /* line 1005, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6562,7 +6564,7 @@ h6 {
 
 /* line 1017, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog-pagination .page-item.active .page-link {
-  background-color: #fbf9ff;
+  background-color: #131313;
   border-color: #f0e9ff;
   color: #888888;
 }
