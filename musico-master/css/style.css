@@ -105,7 +105,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
-  color: #727272;
+  color: #fafafa;
   margin-bottom: 13px;
   font-family: "Muli", sans-serif;
 }
@@ -396,7 +396,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_btn.scss */
 .boxed-btn {
-  background: transparent;
+  background: #111111;
   color: #131313;
   display: inline-block;
   padding: 12px 42px;
@@ -640,7 +640,7 @@ h3 {
   font-size: 50px;
   font-weight: 400;
   line-height: 55px;
-  color: #001D38;
+  color: #ff0d0d;
   position: relative;
   z-index: 0;
   padding-bottom: 0;
@@ -1211,7 +1211,7 @@ h3 {
   -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.96);
-  background: #001D38;
+  background: #000000;
   padding-bottom: 0;
   padding: 20px 150px;
 }
@@ -2094,7 +2094,7 @@ h3 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 0;
-  color: #001D38;
+  color: #ff0d0d;
 }
 
 /* line 248, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_music_area.scss */
@@ -2785,7 +2785,7 @@ h3 {
 .footer .footer_top {
   padding-top: 100px;
   padding-bottom: 129px;
-  background: #001D38;
+  background: #000000;
 }
 
 @media (max-width: 767px) {
@@ -2967,7 +2967,7 @@ h3 {
   background: transparent;
   border: navajowhite;
   color: #fff;
-  border-bottom: 1px solid #334A60;
+  border-bottom: 1px solid #6b0404;
   padding: 15px 0;
 }
 
@@ -2988,7 +2988,7 @@ h3 {
 /* line 149, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
 .footer .footer_top .subscribe-from button {
   border: none;
-  background: #615CFD;
+  background: #da0707;
   padding: 12px 40px;
   display: inline-block;
   font-size: 15px;
@@ -3010,7 +3010,7 @@ h3 {
 /* line 167, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
 .footer .copy-right_text {
   padding-bottom: 30px;
-  background: #001D38;
+  background: #000000;
 }
 
 /* line 170, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
@@ -4203,7 +4203,7 @@ h3 {
 
 /* line 16, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
 .contact-info__icon i, .contact-info__icon span {
-  color: #8f9195;
+  color: #ff0d0d;
   font-size: 27px;
 }
 
@@ -4212,17 +4212,17 @@ h3 {
   font-size: 16px;
   margin-bottom: 0;
   font-size: 16px;
-  color: #2a2a2a;
+  color: #ff0d0d;
 }
 
 /* line 30, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
 .contact-info .media-body h3 a:hover {
-  color: #ff5e13;
+  color: #d50606;
 }
 
 /* line 36, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
 .contact-info .media-body p {
-  color: #8a8a8a;
+  color: #d50606;
 }
 
 /*=================== contact banner end ====================*/
@@ -4246,12 +4246,12 @@ h3 {
 
 /* line 61, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
 .form-contact .form-control {
-  border: 1px solid #e5e6e9;
+  border: 1px solid #111111;
   border-radius: 0px;
   height: 48px;
   padding-left: 18px;
   font-size: 13px;
-  background: transparent;
+  background: #111111;
 }
 
 /* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
@@ -4263,7 +4263,7 @@ h3 {
 /* line 74, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
 .form-contact .form-control::placeholder {
   font-weight: 300;
-  color: #999999;
+  color: #fafafa;
 }
 
 /* line 80, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
@@ -4352,7 +4352,7 @@ h3 {
 
 /* line 75, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .sample-text-area {
-  background: #fff;
+  background: #242424;
   padding: 100px 0 70px 0;
 }
 
@@ -4582,28 +4582,28 @@ h6 {
 /* line 237, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.success {
   color: #fff;
-  background: #4cd3e3;
+  background: #d10a0a;
   border: 1px solid transparent;
 }
 
 /* line 241, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.success:hover {
-  color: #4cd3e3;
-  border: 1px solid #4cd3e3;
-  background: #fff;
+  color: #9c9c9c;
+  border: 1px solid #7a0000;
+  background: #7a0000;
 }
 
 /* line 247, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.success-border {
-  color: #4cd3e3;
-  border: 1px solid #4cd3e3;
+  color: #d10a0a;
+  border: 1px solid #d10a0a;
   background: #fff;
 }
 
 /* line 251, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.success-border:hover {
   color: #fff;
-  background: #4cd3e3;
+  background: #7a0000;
   border: 1px solid transparent;
 }
 
@@ -4951,8 +4951,9 @@ h6 {
   line-height: 40px;
   border: none;
   outline: none;
-  background: #f9f9ff;
+  background: #111111;
   padding: 0 20px;
+  caret-color: #fafafa;
 }
 
 /* line 523, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
@@ -5532,7 +5533,7 @@ h6 {
   border: none;
   border-radius: 0px;
   height: 40px;
-  background: #f9f9ff;
+  background: #111111;
   padding-left: 20px;
   padding-right: 40px;
 }
@@ -5594,7 +5595,7 @@ h6 {
   border: none;
   border-radius: 0px;
   height: 40px;
-  background: #f9f9ff;
+  background: #111111;
   padding-left: 45px;
   padding-right: 40px;
   width: 100%;
