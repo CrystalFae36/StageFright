@@ -2019,7 +2019,6 @@ h3 {
 .music_area.music_gallery {
   margin-top: 0;
   padding-bottom: 50px;
-  border-bottom: 1px solid #EFEFEF;
   padding-top: 145px;
   background: #242424;
 }
@@ -4954,6 +4953,7 @@ h6 {
   background: #111111;
   padding: 0 20px;
   caret-color: #fafafa;
+  color: #fafafa;
 }
 
 /* line 523, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
@@ -5683,7 +5683,7 @@ h6 {
 
 /* line 10, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_area a {
-  color: #2b2b2b !important;
+  color: #ff0d0d !important;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -6486,29 +6486,6 @@ h6 {
   display: inline-block;
 }
 
-/* line 831, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
-.blog_right_sidebar .tag_cloud_widget ul li a {
-  display: inline-block;
-  border: 1px solid #eeeeee;
-  background: #fff;
-  padding: 4px 20px;
-  margin-bottom: 8px;
-  margin-right: 3px;
-  transition: all 0.3s ease 0s;
-  color: #888888;
-  font-size: 13px;
-}
-
-/* line 842, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
-.blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #615CFD;
-  color: #fff !important;
-  -webkit-text-fill-color: #fff;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 /* line 857, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_right_sidebar .instagram_feeds .instagram_row {
   display: flex;
@@ -6550,8 +6527,8 @@ h6 {
   width: 45px;
   height: 45px;
   border-radius: 0 !important;
-  color: #8a8a8a;
-  border: 1px solid #f0e9ff;
+  color: #ff0d0d;
+  border: 1px solid #a70202;
   margin-right: 10px;
   background-color:#131313
 }
@@ -6565,8 +6542,7 @@ h6 {
 /* line 1017, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog-pagination .page-item.active .page-link {
   background-color: #131313;
-  border-color: #f0e9ff;
-  color: #888888;
+  border-color: #a70202;
 }
 
 /* line 1024, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */

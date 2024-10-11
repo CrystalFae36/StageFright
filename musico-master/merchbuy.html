@@ -115,11 +115,15 @@
                     class="single-input">
             </div>
             <div class="mt-10">
-                <input type="cc" name="CC" placeholder="Credit card number"
+                <input type="cc" name="CC" placeholder="Credit card number" maxlength="16"
                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'credit card number'" required
                     class="single-input">
             </div>
-            <a href="#" class="genric-btn success circle">continue</a>
+            <p id=here>&nbsp;</p>
+    <form>
+      <input class="genric-btn success circle" type="button" value="continue" onclick=
+      'document.getElementById("here").innerHTML="thanks for your purchase"'>
+    </form>
         </form>
     </div>
      <!-- contact_rsvp -->
@@ -238,6 +242,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             crossorigin="anonymous">
     </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/added.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -110,7 +110,7 @@
     </div>
      
     <div class="col-lg-8 col-md-8 form-area">
-        <h3 class="mb-30">Form Element</h3>
+        <h3 class="mb-30">-placeholder-</h3>
         <form action="#">
             <div class="default-select" id="default-select">
                 <select>
@@ -137,8 +137,13 @@
                     class="single-input">
             </div>
             <div class="mt-10">
-                <input type="cc" name="CC" placeholder="Credit card number"
+                <input type="text" name="CC" placeholder="Credit card number" maxlength="16"
                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'credit card number'" required
+                    class="single-input">
+            </div>
+            <div class="mt-10">
+                <input type="text" name="CC" placeholder="ccv" maxlength="3"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'CCV'" required
                     class="single-input">
             </div>
             <a href="#" class="genric-btn success circle">continue</a>
