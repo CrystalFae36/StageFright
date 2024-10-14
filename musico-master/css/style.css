@@ -6197,8 +6197,15 @@ h6 {
 }
 
 /* line 537, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
-.blog_details p {
+.details p {
   margin-bottom: 30px;
+}
+
+.author{
+  font-style:italic;
+  font-size:14px;
+  color:#c9c9c9;
+  margin-bottom:15px
 }
 
 /* line 541, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
