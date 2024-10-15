@@ -721,7 +721,7 @@ h3 {
 
 /* line 13, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav {
-  background: #fff;
+  background: #000000;
   float: right;
   margin-top: 0;
   padding: 0;
@@ -740,6 +740,10 @@ h3 {
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
   color: #ED1B1B;
+}
+
+.slicknav_menu .slicknav_nav a{
+  color:#ff0d0d
 }
 
 /* line 32, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slick-nav.scss */
@@ -890,6 +894,18 @@ h3 {
   .header-area .main-header-area {
     padding: 10px 50px;
   }
+}
+
+.logo{
+  width:40px;
+  height:40px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.logo h2{
+  padding-top:20px;
 }
 
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
@@ -1139,7 +1155,7 @@ h3 {
   position: absolute;
   left: 0;
   top: 160%;
-  background: #fff;
+  background: #000000;
   width: 200px;
   z-index: 2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
@@ -6561,7 +6577,7 @@ h6 {
 /* line 1049, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .blog_details {
   box-shadow: none;
-  padding: 0;
+  padding: ;
 }
 
 /* line 1054, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6596,10 +6612,9 @@ h6 {
 
 /* line 1087, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .quote-wrapper {
-  background: rgba(130, 139, 178, 0.1);
   padding: 15px;
   line-height: 1.733;
-  color: #888888;
+  color: #b1b1b1;
   font-style: italic;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -6614,7 +6629,7 @@ h6 {
 
 /* line 1101, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .quotes {
-  background: #fff;
+  background: #242424;
   padding: 15px 15px 15px 20px;
   border-left: 2px solid;
 }
