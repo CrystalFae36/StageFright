@@ -3,11 +3,11 @@
 
 @font-face {
 	font-family: 'BlueSakura';
-	src:url('fonts/BlueSakura.eot');
-	src:url('fonts/BlueSakura.eot') format('embedded-opentype'),
-		url('fonts/BlueSakura.woff') format('woff'),
-		url('fonts/BlueSakura.ttf') format('truetype'),
-		url('fonts/BlueSakura.woff2') format('woff2');
+	src:url('add-font/BlueSakura.eot');
+	src:url('add-font/BlueSakura.eot') format('embedded-opentype'),
+		url('add-font/BlueSakura.woff') format('woff'),
+		url('add-font/BlueSakura.ttf') format('truetype'),
+		url('add-font/BlueSakura.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1311,18 +1311,12 @@ h3 {
   }
 }
 
-.slider_text .text-center h3{
-  font-family: "BlueSakura", sans-serif;
-}
-
-
 /* line 17, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 120px;
+  font-family: "BlueSakura", sans-serif;
+  font-size: 150px;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 /* line 23, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slider.scss */
@@ -3232,7 +3226,8 @@ h3 {
 
 /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .bradcam_area h3 {
-  font-size: 60px;
+  font-family: 'BlueSakura';
+  font-size: 80px;
   color: #fff;
   font-weight: 400;
   margin-bottom: 0;
