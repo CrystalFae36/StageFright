@@ -110,17 +110,8 @@
     </div>
      
     <div class="col-lg-8 col-md-8 form-area">
-        <h3 class="mb-30">Tickets</h3>
-        <form action="#">
-            <div class="default-select" id="default-select">
-                <select>
-                    <option value=" 1">20 October, 2025</option>
-        <option value="1">23 October, 2025</option>
-        <option value="1">25 October, 2025</option>
-        <option value="1">28 October, 2025</option>
-        <option value="1">31 October, 2025</option>
-        </select>
-    </div>
+        <h3 class="mb-30">tickets</h3>
+        <form action="track.html">
             <div class="mt-10">
                 <input type="text" name="first_name" placeholder="First Name"
                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
@@ -137,7 +128,7 @@
                     class="single-input">
             </div>
             <div class="mt-10">
-                <input type="text" name="CC" placeholder="Credit card number" maxlength="16"
+                <input type="cc" name="CC" placeholder="Credit card number" maxlength="16"
                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'credit card number'" required
                     class="single-input">
             </div>
@@ -146,13 +137,12 @@
                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'CCV'" required
                     class="single-input">
             </div>
-            <p id=here>&nbsp;</p>
-            <form>
-                <input class="genric-btn success circle" type="button" value="continue" onclick=
-                'document.getElementById("here").innerHTML="thanks for your purchase"'>
-              </form>
+            
+    
+      <button type="submit" class="genric-btn success circle">continue</button>
+    
+        </form>
     </div>
-
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
