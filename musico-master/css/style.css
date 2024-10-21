@@ -915,10 +915,9 @@ h3 {
   align-items:center;
 }
 
-.logo a h2{
+.logo h2{
   padding-top:20px;
-  font-size:35px;
-  font-family: 'BlueSakura', sans-serif;
+  font-family: "BlueSakura", sans-serif;
 }
 
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
@@ -1449,10 +1448,9 @@ h3 {
 
 /* line 23, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .about_area .about_info h3 {
-  font-size: 70px;
-  font-weight: 50;
+  font-size: 50px;
+  font-weight: 600;
   margin-bottom: 0;
-  font-family: 'BlueSakura', sans-serif;
 }
 .meet{
   font-size:60px;
@@ -6591,11 +6589,21 @@ h6 {
 /* line 1049, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .blog_details {
   box-shadow: none;
+  padding: ;
 }
 
 /* line 1054, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .social-links {
   padding-top: 10px;
+}
+.stay-awake.thumb {
+  display: inline-block;
+  width: 50px; /* Desired width */
+}
+
+.stay-awake.thumb img {
+  width: 100%;
+  height: auto;
 }
 
 /* line 1057, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6868,9 +6876,6 @@ h6 {
 /* line 1299, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .navigation-area .nav-right:hover .thumb img {
   opacity: .5;
-}
-.single-post-area .navigation-area .row {
-  padding-left:55px;
 }
 
 @media (max-width: 991px) {
