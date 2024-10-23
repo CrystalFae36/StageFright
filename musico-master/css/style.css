@@ -4841,6 +4841,8 @@ h6 {
 /* line 399, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .progress-table .table-row .country img {
   margin-right: 15px;
+  width:20%;
+  height:100%;
 }
 
 /* line 404, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
