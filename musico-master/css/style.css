@@ -46,6 +46,9 @@ body {
   transition: 0.3s;
 }
 
+.merch{
+  width: 148px; height: 148px; align-content: center;
+}
 /* line 16, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 a,
 .button {
