@@ -1480,7 +1480,7 @@ h3 {
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp {
   padding: 184px 0;
-  background-image: url(../img/banner/contact.png);
+  background-color:#242424;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1524,7 +1524,6 @@ h3 {
 /* line 69, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp .text h3 {
   font-size: 50px;
-  font-weight: 600;
   color: #fff;
   margin-bottom: 15px;
 }
