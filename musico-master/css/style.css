@@ -3959,6 +3959,8 @@ h3 {
   color: #d50606;
 }
 
+
+
 /* line 36, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
 .contact-info .media-body p {
   color: #d50606;
@@ -3968,6 +3970,8 @@ h3 {
   font-family: "Muli", sans-serif;
   font-size: 20px;
 }
+
+
 
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
@@ -4016,7 +4020,7 @@ h3 {
 }
 
 .ticket-form{
-  padding-left:20px;
+  padding-left:45px;
 }
 
 .tickets{
