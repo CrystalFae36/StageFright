@@ -24,6 +24,11 @@
   justify-content: start;
 }
 
+[data-aos] {
+  opacity: 1 !important; /* Ensures element stays visible if AOS fails */
+}
+
+
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
 /* Tablet desktop :768px. */
