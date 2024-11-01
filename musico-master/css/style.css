@@ -25,7 +25,7 @@
 }
 
 [data-aos] {
-  opacity: 1 !important; /* Ensures element stays visible if AOS fails */
+  opacity: 1 !important;  /*Ensures element stays visible if AOS fails */
 }
 
 
