@@ -24,9 +24,7 @@
   justify-content: start;
 }
 
-[data-aos] {
-  opacity: 1 !important;  /*Ensures element stays visible if AOS fails */
-}
+
 
 
 /* Normal desktop :1200px. */
@@ -2783,7 +2781,8 @@ h3 {
 
 /* line 185, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
 .footer .copy-right_text .footer_links {
-  text-align: right;
+  text-align: center;
+  padding-left:60px;
 }
 
 @media (max-width: 767px) {
@@ -3969,6 +3968,7 @@ h3 {
 /* line 36, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_contact.scss */
 .contact-info .media-body p {
   color: #d50606;
+  padding-top:5px;
 }
 
 .contact-info .media-body .email{
@@ -3976,6 +3976,9 @@ h3 {
   font-size: 20px;
 }
 
+.contact-info .media-body .email-under{
+  padding-top: 10px;
+}
 
 
 /*=================== contact banner end ====================*/

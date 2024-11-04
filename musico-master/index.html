@@ -131,7 +131,7 @@
             </div>
             
         
-            <div class="row align-items-center">
+            <div class="row align-items-center" data-aos="fade-right">
                 <div class="col-xl-7 col-md-6">
                     <div class="about_info">
                         <h3>See Us Live</h3>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center" data-aos="fade-left">
                 <div class="col-xl-5 col-md-6">
                     <div class="about_thumb">
                         <img class="img-fluid" src="img/about/about_1.png" alt="">
@@ -186,8 +186,9 @@
                                         Contact Us
                                 </h3>
                             <ul>
-                                <li><a href="#">support@stagefright.com
-                                    </a></li>
+                                <li><a href="contact.html">support@stagefright.com</a></li>
+                                <li><a href="contact.html">request@stagefright.com</a></li>
+                                <li><a href="contact.html">fanmail@stagefright.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -208,11 +209,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <div class="col-xl-5 col-md-6">
                         <div class="footer_links">
                             <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">tracks</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">contact</a></li>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="track.html">Tours</a></li>
+                                <li><a href="merch.html">Merch</a></li>
+                                <li><a href="blog.html">News</a></li>
+                                <li><a href="discography.html">Discography</a></li>
+                                <li><a href="contact.html">contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -258,6 +261,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script>document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+          duration: 1200,   // Set the animation duration in ms
+          once: false,       // Whether animation should happen only once
+          mirror: true,
+          easing: 'ease-in-out', // Animation easing
+        });
+        window.addEventListener('scroll', () => {
+         AOS.refresh();
+      });
+      });</script>
 </body>
 
 </html>
