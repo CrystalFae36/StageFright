@@ -23,6 +23,58 @@
   -ms-flex-pack: start;
   justify-content: start;
 }
+/* Modal styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Modal styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 10% from top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px; /* Limit width */
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 
