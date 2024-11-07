@@ -1,47 +1,25 @@
-// Function to set a cookie with a specific name, value, and expiration in days
-function setCookie(name, value, days) {
-  let expires = "";
-  if (days) {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    expires = "; expires=" + date.toUTCString();
-  }
-  document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
-}
-
-// Function to get a cookie by name
-function getCookie(name) {
-  const nameEQ = name + "=";
-  const cookies = document.cookie.split(";");
-  for (let i = 0; i < cookies.length; i++) {
-    let c = cookies[i].trim();
-    if (c.indexOf(nameEQ) === 0) {
-      return decodeURIComponent(c.substring(nameEQ.length));
-    }
-  }
-  return null;
-}
-
-// Function to delete a cookie by setting its expiration date to the past
-function deleteCookie(name) {
-  document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-}
-
-// Function to add an item to the cart
-function addToCart() {
-  const cartItems = JSON.parse(getCookie("cartItems") || "[]");
-  const newItem = { id: cartItems.length + 1, name: "Product " + (cartItems.length + 1), quantity: 1 };
+// Function to add an item to the cart with a dynamic name
+function addToCart(itemName) {
+  // Retrieve existing cart items or initialize an empty array
+  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  
+  // Define a new item with the passed item name
+  const newItem = { id: cartItems.length + 1, name: itemName, quantity: 1 };
   cartItems.push(newItem);
-  setCookie("cartItems", JSON.stringify(cartItems), 7);
-  alert("Item added to cart!");
+
+  // Save updated cart items back to localStorage
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  
+  // Confirm the item was added
+  alert(`Item added to cart: ${newItem.name}`);
 }
 
-// Function to display the cart items in the modal
+// Function to display cart items in the modal
 function displayCartItems() {
   const cartItemsContainer = document.getElementById("cartItemsContainer");
   cartItemsContainer.innerHTML = ""; // Clear previous content
 
-  const cartItems = JSON.parse(getCookie("cartItems") || "[]");
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
   if (cartItems.length === 0) {
     cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
@@ -54,9 +32,9 @@ function displayCartItems() {
   }
 }
 
-// Function to open the cart modal
+// Function to open and display the cart modal
 function openCartModal() {
-  displayCartItems(); // Load cart items each time the modal is opened
+  displayCartItems();
   document.getElementById("cartModal").style.display = "block";
 }
 
@@ -67,7 +45,7 @@ function closeCartModal() {
 
 // Function to clear the cart
 function clearCart() {
-  deleteCookie("cartItems");
+  localStorage.removeItem("cartItems");
   alert("Cart cleared!");
-  closeCartModal(); // Close the modal after clearing the cart
+  closeCartModal();
 }
