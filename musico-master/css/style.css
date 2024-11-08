@@ -12,6 +12,17 @@
 	font-style: normal;
 }
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_extend.scss */
+/* Style for Checkout button to appear at the bottom */
+#cartItemsContainer button {
+  display: block;
+  margin: 10px auto;
+}
+
+.modal-content {
+  max-height: 80vh; /* Make modal scrollable */
+  overflow-y: auto;
+}
+
 .modal {
   display: none;
   position: fixed;
