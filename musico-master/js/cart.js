@@ -1,10 +1,9 @@
 // Function to add an item to the cart
 function addToCart(itemName, itemPrice) {
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-  const existingItem = cartItems.find(item => item.name === itemName);
-  if (existingItem) {
-    existingItem.quantity += 1;
+    const existingItem = cartItems.find(item => item.name === itemName);
+  if (existingItem) {   
+    existingItem.quantity += 1;       
   } else {
     const newItem = { id: Date.now(), name: itemName, price: itemPrice, quantity: 1 };
     cartItems.push(newItem);
@@ -33,7 +32,7 @@ function displayCartItems() {
     cartItems.forEach((item) => {
       const itemElement = document.createElement("p");
       const itemTotalPrice = (item.price * item.quantity).toFixed(2);
-      itemElement.textContent = `${item.name} - $${item.price} x ${item.quantity} = $${itemTotalPrice}`;
+      itemElement.textContent = `${item.name} -${item.quantity} , $${itemTotalPrice}`;
 
       const removeButton = document.createElement("button");
       removeButton.textContent = "Remove One";
