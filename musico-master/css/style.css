@@ -1516,6 +1516,34 @@ h3 {
   margin-bottom: 0;
   font-family: 'BlueSakura', sans-serif;
 }
+.about-img{
+  width:444px;
+  height:444px;
+}
+.about-img.evie{
+  background-image: url("../added-images/Evie Normal FINALIZED.png");
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+.about-img.evie:hover{
+  background-image: url("../added-images/Werewolf Evie FINALIZED.png");
+}
+.about-img.cora{
+  background-image: url("../added-images/Finalized Normal Cora.png");
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+.about-img.cora:hover{
+  background-image: url("../added-images/Finalized Costume Cora.png");
+}
+
+
+
+
+
+
+
+
 .meet{
   font-size:75px;
 }
