@@ -12,58 +12,35 @@
 	font-style: normal;
 }
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_extend.scss */
-/* Style for Checkout button to appear at the bottom */
-#cartItemsContainer button {
-  display: block;
-  margin: 10px auto;
-}
-
-.modal-content {
-  max-height: 80vh; /* Make modal scrollable */
-  overflow-y: auto;
-}
-
+/* Modal Overlay */
 .modal {
-  display: none;
+  display: none; /* Hidden by default */
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-/* Optional CSS for styling the Clear Cart button */
-.clear-cart-section {
-  text-align: right;
-  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent black background */
+  overflow-y: auto; /* Allow scrolling on smaller screens */
 }
 
-.clear-cart-section button {
-  padding: 10px 20px;
-  background-color: #ff5a5f;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.clear-cart-section button:hover {
-  background-color: #ff3a3a;
-}
-
-
+/* Modal Content */
 .modal-content {
-  background-color: #000000;
+  background-color: #000; /* Black background */
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%; /* Smaller width for mobile */
   max-width: 500px;
   border-radius: 8px;
   position: relative;
+  color: #fff; /* White text for contrast */
+  overflow-y: auto; /* Scrollable if content overflows */
+  max-height: 80vh; /* Prevent it from being too tall */
 }
 
+/* Close Button */
 .close {
   color: #aaa;
   float: right;
@@ -74,9 +51,83 @@
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
+
+/* Cart Items Container */
+#cartItemsContainer {
+  max-height: 50vh; /* Limit height for better usability on small screens */
+  overflow-y: auto; /* Make scrollable */
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  background-color: #121212; /* Slightly lighter for differentiation */
+}
+
+/* Checkout Button inside the container */
+#cartItemsContainer button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full-width for mobile */
+}
+
+#cartItemsContainer button:hover {
+  background-color: #ff3a3a;
+}
+
+/* Clear Cart Section */
+.clear-cart-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.clear-cart-section button {
+  padding: 10px 20px;
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%; /* Full-width for mobile */
+}
+
+.clear-cart-section button:hover {
+  background-color: #ff3a3a;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 15px;
+    margin: 15% auto;
+    font-size: 14px; /* Slightly smaller text for mobile */
+  }
+
+  #cartItemsContainer {
+    max-height: 60vh; /* Allow more space for items */
+    font-size: 14px; /* Smaller text */
+  }
+
+  #cartItemsContainer button,
+  .clear-cart-section button {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px 16px;
+  }
+
+  .close {
+    font-size: 20px; /* Adjust close button size */
+  }
+}
+
 
 
 
