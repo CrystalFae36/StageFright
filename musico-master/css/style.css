@@ -4362,7 +4362,6 @@ h6 {
   display: inline-block;
   outline: none;
   line-height: 40px;
-  padding: 0 30px;
   font-size: .8em;
   text-align: center;
   text-decoration: none;
@@ -4407,7 +4406,7 @@ h6 {
 
 /* line 185, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.circle {
-  border-radius: 20px;
+  border-radius: 1px;
 }
 
 /* line 188, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
@@ -4482,7 +4481,7 @@ h6 {
 /* line 237, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.success {
   color: #fff;
-  background: #d10a0a;
+  background: transparent;
   border: 1px solid transparent;
 }
 
