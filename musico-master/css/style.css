@@ -28,7 +28,7 @@
 /* Modal Content */
 .modal-content {
   background-color: #000; /* Black background */
-  margin: 10% auto;
+  margin: 20% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 90%; /* Smaller width for mobile */
@@ -4402,11 +4402,13 @@ h6 {
 /* line 182, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.radius {
   border-radius: 3px;
+  line-height: 45px;
 }
 
 /* line 185, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.circle {
-  border-radius: 1px;
+  border-radius: 40px;
+  padding: 4px;
 }
 
 /* line 188, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
@@ -4480,6 +4482,12 @@ h6 {
 
 /* line 237, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.success {
+  color: #fff;
+  background: #d10a0a;
+  border: 1px solid transparent;
+}
+
+.genric-btn.success1 {
   color: #fff;
   background: transparent;
   border: 1px solid transparent;
