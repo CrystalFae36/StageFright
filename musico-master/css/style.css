@@ -4401,8 +4401,9 @@ h6 {
 
 /* line 182, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.radius {
-  border-radius: 3px;
+  border-radius: 45px;
   line-height: 45px;
+  padding: 0 100px;
 }
 
 /* line 185, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
