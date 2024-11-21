@@ -16,19 +16,20 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
-  z-index: 1;
+  z-index: 1050;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4); /* Transparent black background */
-  overflow-y: auto; /* Allow scrolling on smaller screens */
+  overflow-y: 1px; /* Allow scrolling on smaller screens */
+  
 }
 
 /* Modal Content */
 .modal-content {
   background-color: #000; /* Black background */
-  margin: 20% auto;
+ margin: 6% 100% 30% 38%;
   padding: 20px;
   border: 1px solid #888;
   width: 90%; /* Smaller width for mobile */
@@ -4403,13 +4404,12 @@ h6 {
 .genric-btn.radius {
   border-radius: 45px;
   line-height: 45px;
-  padding: 0 100px;
+  padding: 0 30px;
 }
 
 /* line 185, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .genric-btn.circle {
   border-radius: 40px;
-  padding: 4px;
 }
 
 /* line 188, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
