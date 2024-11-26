@@ -1588,9 +1588,33 @@ h3 {
 .about-img.cora:hover{
   background-image: url("../added-images/Finalized Costume Cora.png");
 }
+.about-img.river{
+  background-image: url("../added-images/River Normal.png");
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+.about-img.river:hover{
+  background-image: url("../added-images/River COSTUME.png");
+}
+
+.about-img.ace{
+  background-image: url("");
+  background-size:cover;
+  transition: background-image o.5s ease-in-out;
+}
+.about-img.ace:hover{
+  background-image: url("");
+}
 
 
-
+.about-img.scarlet{
+  background-image: url("../added-images/Scarlet Normal.png");
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+.about-img.scarlet:hover{
+  background-image: url("../added-images/Scarlet COSTUME .png");
+}
 
 
 
