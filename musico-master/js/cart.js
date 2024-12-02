@@ -10,8 +10,16 @@ function addToCart(itemName, itemPrice) {
   }
 
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  alert(`${itemName} added to cart!`);
-}
+    const toast = document.getElementById("toast");
+    
+    // Show the toast
+    toast.classList.add("show");
+    
+    // Hide it after 2 seconds
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 2000);
+  }
 
 // Function to calculate and display the total cost of the cart
 function calculateTotal() {
