@@ -13,6 +13,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -141,8 +142,16 @@
                                 </div>
                                 <div class="col-xl-3 col-md-3">
                                     <div class="music_btn">
-                                        <div id="toast" class="toast hidden">Added to cart!</div>
-                                            <button  onclick="addToCart('Arlenes Grocery', 123456789.12)" class="boxed-btn">add to cart
+                                            <button id="show-toast"  onclick="addToCart('Arlenes Grocery', 123456789.12)" class="boxed-btn">add to cart</button>
+                                            <script>document.getElementById("show-toast").addEventListener("click", function() {
+                                                Toastify({
+                                                    text: "Added to cart",
+                                                    duration: 3000,
+                                                    close: false,
+                                                    gravity: "top",
+                                                  position: "center",
+                                                }).showToast();
+                                              });</script>
                                     </div>
                                 </div>
                     </div>
@@ -324,7 +333,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
             crossorigin="anonymous">
     </script>
-    <script src="js/cart.js"
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -12,28 +12,6 @@
 	font-style: normal;
 }
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_extend.scss */
-#toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-#toast.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.hidden {
-  display: none;
-}
 
 /* Modal Overlay */
 .modal {
@@ -1621,12 +1599,12 @@ h3 {
 }
 
 .about-img.ace{
-  background-image: url("");
+  background-image: url("../added-images/Normal Ace FINALIZED.png");
   background-size:cover;
-  transition: background-image o.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 .about-img.ace:hover{
-  background-image: url("");
+  background-image: url("../added-images/Stage costume Ace FINALIZED.png");
 }
 
 
