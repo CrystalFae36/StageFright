@@ -1,7 +1,3 @@
-import Toastify from 'toastify-js';
-import "toastify-js/src/toastify.css";
-
-
 // Function to add an item to the cart
 function addToCart(itemName, itemPrice) {
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
@@ -14,6 +10,7 @@ function addToCart(itemName, itemPrice) {
   }
 
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  alert(`${itemName} added to cart!`);
   }
 
 // Function to calculate and display the total cost of the cart

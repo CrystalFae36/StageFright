@@ -13,7 +13,6 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -64,13 +63,14 @@
                                             </li>
                                             <li><a href="discography.html">Discography <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                     <li><a href="stay-awake.html">Stay Awake</a></li>
-                                                     <li><a href="fear-the-reaper.html">Fear The Reaper</a></li>
-                                                     <li><a href="embrace-the-night.html">Embrace The Night</a></li>
+                                                    <li><a href="stay-awake.html">Stay Awake</a></li>
+                                                    <li><a href="fear-the-reaper.html">Fear The Reaper</a></li>
+                                                    <li><a href="embrace-the-night.html">Embrace The Night</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li><button class="genric-btn success1" onclick="openCartModal()">View Cart</button></li>
+                                            <li><button class="genric-btn success1" onclick="openCartModal()">View
+                                                    Cart</button></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -113,47 +113,41 @@
     <div id="cartModal" class="modal">
         <div class="modal-content">
             <!-- Clear Cart Button in Shop Menu -->
-        <span class="close" onclick="closeCartModal()">&times;</span>
-          <h2>Your Cart</h2>
-          <div id="cartItemsContainer" style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px;">
-            <!-- Cart items will be displayed here -->
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItemsContainer"
+                style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px;">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <!-- Clear Cart Button below the items -->
+            <button onclick="clearCart()"
+                style="margin-top: 15px; padding: 10px 20px; background-color: #e74c3c; color: white; border: none; cursor: pointer;">
+                Clear Cart
+            </button>
         </div>
-<!-- Clear Cart Button below the items -->
-<button onclick="clearCart()" style="margin-top: 15px; padding: 10px 20px; background-color: #e74c3c; color: white; border: none; cursor: pointer;">
-    Clear Cart
-</button>
-  </div>
-</div>
-</div>
+    </div>
+    </div>
     <div class="music_area music_gallery inc_padding">
         <div class="container request">
             <div class="row align-items-center justify-content-center mb-20">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
-                                    <div class="music_field">
-                                                <div class="audio_name">
-                                                    <div class="name">
-                                                        <h4>Arlene's Grocery, Manhattan, New York</h4>
-                                                        <p>21 October, 2025</p>
-                                                    </div>
-                                                </div>
+                        <div class="col-xl-9 col-md-9">
+                            <div class="music_field">
+                                <div class="audio_name">
+                                    <div class="name">
+                                        <h4>Arlene's Grocery, Manhattan, New York</h4>
+                                        <p>21 October, 2025</p>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                            <button id="show-toast"  onclick="addToCart('Arlenes Grocery', 123456789.12)" class="boxed-btn">add to cart</button>
-                                            <script>document.getElementById("show-toast").addEventListener("click", function() {
-                                                Toastify({
-                                                    text: "Added to cart",
-                                                    duration: 3000,
-                                                    close: false,
-                                                    gravity: "top",
-                                                  position: "center",
-                                                }).showToast();
-                                              });</script>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="music_btn">
+                                <button onclick="addToCart('Arlenes Grocery ticket', 123456789.12)"
+                                    class="boxed-btn">add to cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -161,21 +155,22 @@
             <div class="row align-items-center justify-content-center mb-20">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
-                                    <div class="music_field">
-                                                <div class="audio_name">
-                                                    <div class="name">
-                                                        <h4>Rose Music Center at The Heights, Huber Heights, Ohio</h4>
-                                                        <p>22 October, 2025</p>
-                                                    </div>
-                                                </div>
+                        <div class="col-xl-9 col-md-9">
+                            <div class="music_field">
+                                <div class="audio_name">
+                                    <div class="name">
+                                        <h4>Rose Music Center at The Heights, Huber Heights, Ohio</h4>
+                                        <p>22 October, 2025</p>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                        <a href="tickets.html" class="boxed-btn">buy Tickets</a>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="music_btn">
+                                <button onclick="addToCart('Rose Music Center ticket', 123456789.12)"
+                                    class="boxed-btn">add to cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -183,21 +178,22 @@
             <div class="row align-items-center justify-content-center mb-20">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
-                                    <div class="music_field">
-                                                <div class="audio_name">
-                                                    <div class="name">
-                                                        <h4>Tin Roof, Orlando, Florida</h4>
-                                                        <p>24 October, 2025</p>
-                                                    </div>
-                                                </div>
+                        <div class="col-xl-9 col-md-9">
+                            <div class="music_field">
+                                <div class="audio_name">
+                                    <div class="name">
+                                        <h4>Tin Roof, Orlando, Florida</h4>
+                                        <p>24 October, 2025</p>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                        <a href="tickets.html" class="boxed-btn">buy Tickets</a>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="music_btn">
+                                <button onclick="addToCart('Tin Roof ticket', 123456789.12)" class="boxed-btn">add to
+                                    cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -205,21 +201,22 @@
             <div class="row align-items-center justify-content-center mb-20">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
-                                    <div class="music_field">
-                                                <div class="audio_name">
-                                                    <div class="name">
-                                                        <h4>The Rail, Fort Worth, Texas</h4>
-                                                        <p>27 October, 2025</p>
-                                                    </div>
-                                                </div>
+                        <div class="col-xl-9 col-md-9">
+                            <div class="music_field">
+                                <div class="audio_name">
+                                    <div class="name">
+                                        <h4>The Rail, Fort Worth, Texas</h4>
+                                        <p>27 October, 2025</p>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                        <a href="tickets.html" class="boxed-btn">buy Tickets</a>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="music_btn">
+                                <button onclick="addToCart('The Rail ticket', 123456789.12)" class="boxed-btn">add to
+                                    cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -227,21 +224,22 @@
             <div class="row align-items-center justify-content-center mb-20">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
-                                    <div class="music_field">
-                                                <div class="audio_name">
-                                                    <div class="name">
-                                                        <h4>The Echo, Los Angeles, California</h4>
-                                                        <p>31 October, 2025</p>
-                                                    </div>
-                                                </div>
+                        <div class="col-xl-9 col-md-9">
+                            <div class="music_field">
+                                <div class="audio_name">
+                                    <div class="name">
+                                        <h4>The Echo, Los Angeles, California</h4>
+                                        <p>31 October, 2025</p>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                        <a href="tickets.html" class="boxed-btn">buy Tickets</a>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="music_btn">
+                                <button onclick="addToCart('The Echo ticket', 123456789.12)" class="boxed-btn">add to
+                                    cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -271,24 +269,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
-                            <div class="footer_widget">
-                                    <h3 class="footer_title">
-                                            Newsletter
-                                    </h3>
-                                <div class="subscribe-from">
-                                        <form action="#">
-                                                <input type="text" placeholder="Enter your mail">
-                                                <button type="submit" >Subscribe</button>
-                                            </form>
-                                </div>
-                                <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
-                                </div>
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Newsletter
+                            </h3>
+                            <div class="subscribe-from">
+                                <form action="#">
+                                    <input type="text" placeholder="Enter your mail">
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                            <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!
+                            </p>
+                        </div>
                     </div>
                     <div class="col-xl-5 col-md-5 offset-xl-1">
                         <div class="footer_widget footer_thing">
-                                <h3 class="footer_title">
-                                        Contact Us
-                                </h3>
+                            <h3 class="footer_title">
+                                Contact Us
+                            </h3>
                             <ul>
                                 <li><a href="#">support@stagefright.com
                                     </a></li>
@@ -305,8 +304,11 @@
                     <div class="col-xl-7 col-md-6">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
                     <div class="col-xl-5 col-md-6">
@@ -329,11 +331,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- JS here -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-            crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
     <script src="js/cart.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
