@@ -4140,7 +4140,17 @@ h3 {
 .contact-info .media-body .email-under{
   padding-top: 10px;
 }
+.contact-info .media-body .address h4{
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
 
+.merch-total{
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+}
 
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
