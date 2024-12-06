@@ -6909,6 +6909,15 @@ button.bg-dark:hover {
     margin-right: -15px;
     margin-left: -15px
 }
+.align-items-center-fix {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    padding: 50px 0;
+    border-top: 1px dotted #eee;
+    margin-left: -15px;
+    justify-content: space-around;
+}
 
 .align-items-baseline {
     -webkit-box-align: baseline!important;

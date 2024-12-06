@@ -3,11 +3,12 @@
 
 @font-face {
 	font-family: 'BlueSakura';
-	src:url('add-font/BlueSakura.eot');
-	src:url('add-font/BlueSakura.eot') format('embedded-opentype'),
-		url('add-font/BlueSakura.woff') format('woff'),
-		url('add-font/BlueSakura.ttf') format('truetype'),
-		url('add-font/BlueSakura.woff2') format('woff2');
+	src:url('add-font/selincah.regular.eot');
+	src:url('add-font/selincah.regular.eot') format('embedded-opentype'),
+		url('add-font/selincah.regular.woff') format('woff'),
+		url('add-font/selincah.regular.ttf') format('truetype'),
+		url('add-font/selincah.regular.woff2') format('woff2'),
+    url('add-font/selincah.regular.otf') format('otf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -159,7 +160,7 @@ body {
 }
 
 .merch{
-  width: 148px; height: 148px; align-content: center;
+  width: 148px; height: 148px; 
 }
 /* line 16, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 a,
@@ -1974,7 +1975,9 @@ h3 {
 .music_area .music_field .thumb {
   overflow: hidden;
   float: left;
-  margin-right: 50px;
+  margin: 39px;
+  text-align:center;
+
 }
 
 /* line 160, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_music_area.scss */
@@ -3104,7 +3107,7 @@ h3 {
 
 /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .bradcam_area h3 {
-  font-family: 'BlueSakura';
+  font-family: 'BlueSakura', sans-serif;
   font-size: 80px;
   color: #fff;
   font-weight: 400;

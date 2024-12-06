@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'selincah.regular';
+  src: url(./selincah.regular.eot);
+  src: url(./selincah.regular.eot?#iefix) format('embedded-opentype'),
+       url(./selincah.regular.otf) format('otf'),
+       url(./selincah.regular.ttf) format('truetype'),
+       url(./selincah.regular.woff) format('woff'),
+       url(./selincah.regular.woff2) format('woff2');
+}
