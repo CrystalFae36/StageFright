@@ -1,7 +1,7 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#contact-form');
+	var form = $('#footer-form');
 
 	// Get the messages div.
 	var formMessages = $('.ajax-response');
@@ -26,10 +26,10 @@ $(function() {
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text('');
 
 			// Clear the form.
-			$('#contact-form input,#contact-form textarea').val('');
+			$('#footer-form').val('');
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.

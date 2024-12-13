@@ -168,16 +168,39 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="footer_widget">
-                            <h3 class="footer_title">Newsletter</h3>
-                                <div class="subscribe-from">
-                                    <form action="#">
-                                        <input type="email" name="email" placeholder="Enter your mail">
-                                        <button >Subscribe</button>
-                                    </form>
-                                </div>
-                            <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
+                          <h3 class="footer_title">Newsletter</h3>
+                          <div class="subscribe-from">
+                            <form action="#" id="footer-form">
+                                <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                              
+                              <!-- Add a <p> tag to display the result -->
+                              <p id="message"></p>
+                              
+                              <script>
+                                // Add an event listener for form submission
+                                document.getElementById('footer-form').addEventListener('submit', function(event) {
+                                  event.preventDefault();  // Prevent the form from submitting
+                                  
+                                  let email = document.getElementById('emailInput').value;
+                                  let messageElement = document.getElementById('message');
+                                  
+                                  // Check if the email contains '@gmail.com'
+                                  if (email.includes('@gmail.com')) {
+                                    messageElement.textContent = 'The email contains @gmail.com';  // Display the message
+                                  } else {
+                                    messageElement.textContent = 'The email must contain @gmail.com';  // Display the message
+                                  }
+                                });
+                              </script>
+                              
+                              
+                          </div>
+                          <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
                         </div>
-                    </div>
+                      </div>
+                      
                     <div class="col-xl-5 col-md-5 offset-xl-1">
                         <div class="footer_widget footer_thing">
                             <h3 class="footer_title">Contact Us</h3>
