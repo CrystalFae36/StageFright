@@ -261,9 +261,33 @@
                           <h3 class="footer_title">Newsletter</h3>
                           <div class="subscribe-from">
                             <form action="#" id="footer-form">
-                              <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
-                              <button type="submit">Subscribe</button>
-                            </form>
+                            <div class="input-group">
+                                <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
+                                <button type="submit" class="subscribe-button">Subscribe</button>
+                            </div>
+                              </form>
+                              
+                              <!-- Add a <p> tag to display the result -->
+                                <p id="message"></p>
+                              
+                              <script>
+                                // Add an event listener for form submission
+                                document.getElementById('footer-form').addEventListener('submit', function(event) {
+                                  event.preventDefault();  // Prevent the form from submitting
+                                  
+                                  let email = document.getElementById('emailInput').value;
+                                  let messageElement = document.getElementById('message');
+                                  
+                                  // Check if the email contains '@gmail.com'
+                                  if (email.includes('@gmail.com')) {
+                                    messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                                  } else {
+                                    messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                                  }
+                                });
+                              </script>
+                              
+                              
                           </div>
                           <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
                         </div>

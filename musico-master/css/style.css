@@ -16,8 +16,14 @@
 
 /* Modal Overlay */
 /* From Uiverse.io by MuhammadHasann */
-
-
+.subscribe-button{
+  cursor: pointer;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adds space between the input and button */
+}
 .row{
   display: flex;
   flex-direction: row;
@@ -5825,6 +5831,7 @@ h6 {
 .blog_area a:hover, .blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #f31717 0%, #a00000 99%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   -webkit-transition: 0.5s;
@@ -5887,7 +5894,6 @@ h6 {
 /* line 74, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-blog .tag {
   text-align: left;
-  display: inline-block;
   float: left;
   font-size: 13px;
   font-weight: 300;
@@ -7309,6 +7315,7 @@ h6 {
 .blog_part .single-home-blog .card .card-body a:hover {
   background: -webkit-linear-gradient(131deg, #ff7e5f 0%, #feb47b 99%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -7417,8 +7424,10 @@ h6 {
   transition: 0.8s;
   background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: 1s;
+  animation: 1s;
 }
 
 /* line 150, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog_part.scss */
