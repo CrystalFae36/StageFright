@@ -1,5 +1,6 @@
 /* 1. Theme default css */
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,700|Muli:300,300i,400,400i,600,600i,700,700i,900&display=swap");
+
 /* line 5, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -27,7 +28,8 @@ a,
 
 /* line 20, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 a:focus,
-.button:focus, button:focus {
+.button:focus,
+button:focus {
   text-decoration: none;
   outline: none;
 }
@@ -55,7 +57,11 @@ button {
 }
 
 /* line 41, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Josefin Sans", sans-serif;
   color: #001D38;
 }
@@ -224,7 +230,7 @@ h3 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#000000',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
   top: 0;
   left: 0;
@@ -270,7 +276,7 @@ h3 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5db2ff', endColorstr='#007db9e8', GradientType=1);
   /* IE6-9 */
   top: 0;
   left: 0;

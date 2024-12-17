@@ -1,9 +1,9 @@
 // Function to add an item to the cart
 function addToCart(itemName, itemPrice) {
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-    const existingItem = cartItems.find(item => item.name === itemName);
-  if (existingItem) {   
-    existingItem.quantity += 1;       
+  const existingItem = cartItems.find(item => item.name === itemName);
+  if (existingItem) {
+    existingItem.quantity += 1;
   } else {
     const newItem = { id: Date.now(), name: itemName, price: itemPrice, quantity: 1 };
     cartItems.push(newItem);
@@ -11,7 +11,7 @@ function addToCart(itemName, itemPrice) {
 
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
   alert(`${itemName} added to cart!`);
-  }
+}
 
 // Function to calculate and display the total cost of the cart
 function calculateTotal() {
