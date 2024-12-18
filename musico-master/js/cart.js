@@ -1,19 +1,44 @@
+const button = document.getElementById('needs-size')
+
+if(button.classList.contains('list-size')){
+  // Function to add an item to the cart
+let selectedSize = ''; // To store the selected size
+
+// Function to select a size
+function selectSize(size) {
+  selectedSize = size;
+}
+
 // Function to add an item to the cart
 function addToCart(itemName, itemPrice) {
+  if (!selectedSize) {
+    alert('Please select a size before adding to the cart!');
+    return;
+  }
+
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-  const existingItem = cartItems.find(item => item.name === itemName);
+  const itemNameWithSize = `${selectedSize} ${itemName}`;
+  const existingItem = cartItems.find(item => item.name === itemNameWithSize);
+
   if (existingItem) {
     existingItem.quantity += 1;
   } else {
-    const newItem = { id: Date.now(), name: itemName, price: itemPrice, quantity: 1 };
+    const newItem = { 
+      id: Date.now(), 
+      name: itemNameWithSize, 
+      price: itemPrice, 
+      quantity: 1 
+    };
     cartItems.push(newItem);
   }
 
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  alert(`${itemName} added to cart!`);
-}
+  alert(`${itemNameWithSize} added to cart!`);
 
-// Function to calculate and display the total cost of the cart
+  // Reset selected size
+  selectedSize = '';
+}}
+
 function calculateTotal() {
   const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -80,8 +105,12 @@ function removeOneFromCart(itemName) {
 
 // Function to open the cart modal
 function openCartModal() {
-  displayCartItems(); // Load cart items each time the modal is opened
-  document.getElementById("cartModal").style.display = "block";
+  try {
+    displayCartItems(); // Ensure this function is working correctly
+    document.getElementById("cartModal").style.display = "block"; // Open the modal
+  } catch (error) {
+    console.error("Error opening cart modal:", error);
+  }
 }
 
 // Function to close the cart modal
