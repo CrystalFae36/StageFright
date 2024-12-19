@@ -112,7 +112,7 @@
             <div class="col-lg-8 posts-list">
                <div class="single-post">
                   <div class="feature-img">
-                     <img class="img-fluid" src="img/blog/single_blog_1.png" alt="">
+                     <img class="img-fluid" src="added-images/tours-blog-image.png" alt="A photo of a crowd of people with their hands raised in front of a stage bathed in orange and yellow light at a rock concert.">
                   </div>
                   <div class="blog_details">
                      <h2>The Nightmares Tour!
@@ -150,7 +150,7 @@
                            class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                            <div class="thumb">
                               <a href="merch-article.html">
-                                 <img class="img-fluid" src="img/post/preview.png" alt="">
+                                 <img class="img-fluid" src="added-images/merch-blog-mini.png" alt="An image of various merch items with the word 'Insomniac' above them and the word 'Line' written below them, both written in red. The merch in question is the Stay Awake hoodie, the Stay Awake vinyl album, and the Stage Fright beanie. The background of the image is an off-black, being more red-toned, and has dark red splatters on it.">
                               </a>
                            </div>
                            <div class="arrow">
@@ -177,7 +177,7 @@
                 <aside class="single_sidebar_widget popular_post_widget">
                     <h3 class="widget_title">Recent Posts</h3>
                     <div class="media post_item">
-                        <img src="img/post/post_1.png" alt="post">
+                        <img src="added-images/tours-article-mini.png" alt="A photo of a crowd of people with their hands raised in front of a stage bathed in orange and yellow light at a rock concert.">
                         <div class="media-body">
                             <a href="single-blog.html">
                                 <h3>The Nightmares Tour!
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <div class="media post_item">
-                        <img src="img/post/post_2.png" alt="post">
+                        <img src="added-images/merch-blog-mini.png" alt="An image of various merch items with the word 'Insomniac' above them and the word 'Line' written below them, both written in red. The merch in question is the Stay Awake hoodie, the Stay Awake vinyl album, and the Stage Fright beanie. The background of the image is an off-black, being more red-toned, and has dark red splatters on it.">
                         <div class="media-body">
                             <a href="merch-article.html">
                                 <h3>NEW MERCH DROP: Insomniac Line!</h3>
@@ -196,7 +196,7 @@
                         </div>
                     </div>
                     <div class="media post_item">
-                        <img src="img/post/post_3.png" alt="post">
+                        <img src="added-images/album-out-mini.png" alt="The Stay Awake album cover with the words 'Out Now!' written on it twice in red text.">
                         <div class="media-body">
                             <a href="album-out-article.html">
                                 <h3><i>Stay Awake</i> is out now!</h3>
@@ -205,7 +205,7 @@
                         </div>
                     </div>
                     <div class="media post_item">
-                        <img src="img/post/post_4.png" alt="post">
+                        <img src="added-images/stay-awake-cover-mini.png" alt="The Stay Awake album cover.">
                         <div class="media-body">
                             <a href="album-announcement.html">
                                 <h3>Album Announcement: <i>Stay Awake</i>!</h3>
@@ -214,17 +214,30 @@
                         </div>
                     </div>
                 </aside>
-                  <aside class="single_sidebar_widget newsletter_widget">
-                     <h4 class="widget_title">Newsletter</h4>
-                     <form action="#">
+                <aside class="single_sidebar_widget newsletter_widget">
+                    <h4 class="widget_title">Newsletter</h4>
+                    <form id="subscribe-form">
                         <div class="form-group">
-                           <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                              onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                            <input type="email" class="form-control" id="emailInput" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
                         </div>
+                        <p id="message"></p>
                         <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                           type="submit">Subscribe</button>
-                     </form>
-                  </aside>
+                            type="submit">Subscribe</button>
+                    </form>
+                    <script> document.getElementById('subscribe-form').addEventListener('submit', function (event) {
+                            event.preventDefault();
+                            let email = document.getElementById('emailInput').value;
+                            let messageElement = document.getElementById('message');
+
+                            // Check if the email contains '@gmail.com'
+                            if (email.includes('@gmail.com')) {
+                                messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                            } else {
+                                messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                            }
+                        });</script>
+                </aside>
                </div>
             </div>
          </div>
@@ -241,7 +254,7 @@
                         <div class="footer_widget">
                           <h3 class="footer_title">Newsletter</h3>
                           <div class="subscribe-from">
-                            <form action="#" id="footer-form">
+                            <form id="footer-form">
                             <div class="input-group">
                                 <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
                                 <button type="submit" class="subscribe-button">Subscribe</button>

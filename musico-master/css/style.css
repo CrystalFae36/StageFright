@@ -2192,7 +2192,7 @@ h3 {
 .music_area.music_gallery {
   margin-top: 0;
   padding-bottom: 50px;
-  padding-top: 145px;
+  padding-top: 65px;
   background: #242424;
 }
 
@@ -2221,6 +2221,11 @@ h3 {
     padding-bottom: 70px;
   }
 }
+
+.album-title{
+  font-size:55px;
+}
+
 
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_offers.scss */
 .offers_area {
@@ -5040,20 +5045,21 @@ h6 {
 
 /* line 515, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .single-input {
-  display: block;
-  width: 100%;
-  line-height: 40px;
   border: none;
-  outline: none;
-  background: #111111;
-  padding: 0 20px;
-  caret-color: #fafafa;
-  color: #fafafa;
+ padding: 1rem;
+ border-radius: 1rem;
+ background: #111111;
+ box-shadow: 20px 20px 60px #111111;
+ transition: 0.3s;
+ color: #ffffff;
 }
 
 /* line 523, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .single-input:focus {
-  outline: none;
+ background: #111111;
+ box-shadow: inset 20px 20px 60px #111111;
+ transition: 0.3s;
+ caret-color: #FFFFFF;
 }
 
 /* line 528, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */

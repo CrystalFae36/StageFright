@@ -115,7 +115,7 @@
                     <div class="blog_left_sidebar">
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_1.png" alt="">
+                                <img class="card-img rounded-0" src="added-images/tours-blog-image.png" alt="A photo of a crowd of people with their hands raised in front of a stage bathed in orange and yellow light at a rock concert.">
                                 <a href="single-blog.html" class="blog_item_date">
                                     <h3>5th</h3>
                                     <p>September 2025</p>
@@ -212,7 +212,7 @@
                         <nav class="blog-pagination justify-content-center d-flex">
                             <ul class="pagination">
                                 <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
+                                    <a href="blog.html" class="page-link" aria-label="Previous">
                                         <i class="ti-angle-left"></i>
                                     </a>
                                 </li>
@@ -220,7 +220,7 @@
                                     <a href="blog.html" class="page-link">1</a>
                                 </li>
                                 <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
+                                    <a href="blog.html" class="page-link" aria-label="Next">
                                         <i class="ti-angle-right"></i>
                                     </a>
                                 </li>
@@ -233,7 +233,7 @@
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Recent Posts</h3>
                             <div class="media post_item">
-                                <img src="img/post/post_1.png" alt="post">
+                                <img src="added-images/tours-article-mini.png" alt="A photo of a crowd of people with their hands raised in front of a stage bathed in orange and yellow light at a rock concert.">
                                 <div class="media-body">
                                     <a href="single-blog.html">
                                         <h3>The Nightmares Tour!
@@ -243,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="media post_item">
-                                <img src="img/post/post_2.png" alt="post">
+                                <img src="added-images/merch-blog-mini.png" alt="An image of various merch items with the word 'Insomniac' above them and the word 'Line' written below them, both written in red. The merch in question is the Stay Awake hoodie, the Stay Awake vinyl album, and the Stage Fright beanie. The background of the image is an off-black, being more red-toned, and has dark red splatters on it.">
                                 <div class="media-body">
                                     <a href="merch-article.html">
                                         <h3>NEW MERCH DROP: Insomniac Line!</h3>
@@ -252,7 +252,7 @@
                                 </div>
                             </div>
                             <div class="media post_item">
-                                <img src="img/post/post_3.png" alt="post">
+                                <img src="added-images/album-out-mini.png" alt="The Stay Awake album cover with the words 'Out Now!' written on it twice in red text.">
                                 <div class="media-body">
                                     <a href="album-out-article.html">
                                         <h3><i>Stay Awake</i> is out now!</h3>
@@ -261,7 +261,7 @@
                                 </div>
                             </div>
                             <div class="media post_item">
-                                <img src="img/post/post_4.png" alt="post">
+                                <img src="added-images/stay-awake-cover-mini.png" alt="The Stay Awake album cover.">
                                 <div class="media-body">
                                     <a href="album-announcement.html">
                                         <h3>Album Announcement: <i>Stay Awake</i>!</h3>
@@ -272,8 +272,7 @@
                         </aside>
                         <aside class="single_sidebar_widget newsletter_widget">
                             <h4 class="widget_title">Newsletter</h4>
-
-                            <form action="#" id="subscribe-form">
+                            <form id="subscribe-form">
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="emailInput" onfocus="this.placeholder = ''"
                                         onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
@@ -309,43 +308,41 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="footer_widget">
-                            <h3 class="footer_title">Newsletter</h3>
-                            <div class="subscribe-from">
-                                <form action="#" id="footer-form">
-                                    <div class="input-group">
-                                        <input type="email" name="email" id="emailInput" placeholder="Enter your mail"
-                                            required>
-                                        <button type="submit" class="subscribe-button">Subscribe</button>
-                                    </div>
-                                </form>
-
-                                <!-- Add a <p> tag to display the result -->
-                                <p id="message"></p>
-
-                                <script>
-                                    // Add an event listener for form submission
-                                    document.getElementById('footer-form').addEventListener('submit', function (event) {
-                                        event.preventDefault();  // Prevent the form from submitting
-
-                                        let email = document.getElementById('emailInput').value;
-                                        let messageElement = document.getElementById('message');
-
-                                        // Check if the email contains '@gmail.com'
-                                        if (email.includes('@gmail.com')) {
-                                            messageElement.innerHTML = 'You have subscribed!';  // Display the message
-                                        } else {
-                                            messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
-                                        }
-                                    });
-                                </script>
-
-
+                          <h3 class="footer_title">Newsletter</h3>
+                          <div class="subscribe-from">
+                            <form id="footer-form">
+                            <div class="input-group">
+                                <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
+                                <button type="submit" class="subscribe-button">Subscribe</button>
                             </div>
-                            <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!
-                            </p>
+                              </form>
+                              
+                              <!-- Add a <p> tag to display the result -->
+                                <p id="message"></p>
+                              
+                              <script>
+                                // Add an event listener for form submission
+                                document.getElementById('footer-form').addEventListener('submit', function(event) {
+                                  event.preventDefault();  // Prevent the form from submitting
+                                  
+                                  let email = document.getElementById('emailInput').value;
+                                  let messageElement = document.getElementById('message');
+                                  
+                                  // Check if the email contains '@gmail.com'
+                                  if (email.includes('@gmail.com')) {
+                                    messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                                  } else {
+                                    messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                                  }
+                                });
+                              </script>
+                              
+                              
+                          </div>
+                          <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
                         </div>
-                    </div>
-
+                      </div>
+                      
                     <div class="col-xl-5 col-md-5 offset-xl-1">
                         <div class="footer_widget footer_thing">
                             <h3 class="footer_title">Contact Us</h3>
@@ -366,11 +363,8 @@
                     <div class="col-xl-7 col-md-6">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
                     <div class="col-xl-5 col-md-6">
