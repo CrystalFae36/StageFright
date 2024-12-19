@@ -1,7 +1,3 @@
-const button = document.getElementById('needs-size')
-
-if(button.classList.contains('list-size')){
-  // Function to add an item to the cart
 let selectedSize = ''; // To store the selected size
 
 // Function to select a size
@@ -10,14 +6,14 @@ function selectSize(size) {
 }
 
 // Function to add an item to the cart
-function addToCart(itemName, itemPrice) {
-  if (!selectedSize) {
+function addToCart(itemName, itemPrice, requiresSize = false) {
+  if (requiresSize && !selectedSize) {
     alert('Please select a size before adding to the cart!');
     return;
   }
 
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-  const itemNameWithSize = `${selectedSize} ${itemName}`;
+  const itemNameWithSize = requiresSize ? `${selectedSize} ${itemName}` : itemName;
   const existingItem = cartItems.find(item => item.name === itemNameWithSize);
 
   if (existingItem) {
@@ -37,12 +33,14 @@ function addToCart(itemName, itemPrice) {
 
   // Reset selected size
   selectedSize = '';
-}}
+}
 
+// Function to calculate the total
 function calculateTotal() {
   const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 }
+
 
 // Function to display cart items in the modal
 function displayCartItems() {
