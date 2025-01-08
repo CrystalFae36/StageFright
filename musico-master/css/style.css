@@ -4352,6 +4352,10 @@ h3 {
   height: 100% !important;
 }
 
+.contact-hide{
+  visibility:hidden;
+}
+
 .ticket-form{
   padding-left:45px;
 }

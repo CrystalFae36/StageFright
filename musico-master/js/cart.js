@@ -6,6 +6,7 @@ function selectSize(size) {
 }
 
 // Function to add an item to the cart
+let cartCount = 0;
 function addToCart(itemName, itemPrice, requiresSize = false) {
   if (requiresSize && !selectedSize) {
     alert('Please select a size before adding to the cart!');
@@ -29,7 +30,6 @@ function addToCart(itemName, itemPrice, requiresSize = false) {
   }
 
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  alert(`${itemNameWithSize} added to cart!`);
 
   // Reset selected size
   selectedSize = '';
@@ -119,7 +119,6 @@ function closeCartModal() {
 // Function to clear the cart
 function clearCart() {
   localStorage.removeItem("cartItems");
-  alert("Cart cleared!");
   displayCartItems();
 }
 

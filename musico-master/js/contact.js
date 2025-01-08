@@ -2,12 +2,6 @@ $(document).ready(function () {
 
     (function ($) {
         "use strict";
-
-
-        jQuery.validator.addMethod('answercheck', function (value, element) {
-            return this.optional(element) || /^\bcat\b$/.test(value)
-        }, "type the correct answer -_-");
-
         // validate contactForm form
         $(function () {
             $('#contactForm').validate({
@@ -19,10 +13,6 @@ $(document).ready(function () {
                     subject: {
                         required: true,
                         minlength: 4
-                    },
-                    number: {
-                        required: true,
-                        minlength: 5
                     },
                     email: {
                         required: true,
@@ -41,10 +31,6 @@ $(document).ready(function () {
                     subject: {
                         required: "Please enter your subject here.",
                         minlength: "your subject must consist of at least 4 characters"
-                    },
-                    number: {
-                        required: "Please enter your number here.",
-                        minlength: "your Number must consist of at least 5 characters"
                     },
                     email: {
                         required: "Please enter a valid email address."
