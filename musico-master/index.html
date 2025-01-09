@@ -44,7 +44,8 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="added-images/Finalized Logo.PNG" alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
+                                        <img src="added-images/Finalized Logo.PNG"
+                                            alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
                                     </a>
                                     <a href="index.html">
                                         <h2>Stage Fright</h2>
@@ -63,12 +64,25 @@
                                             </li>
                                             <li><a href="discography.html">Discography <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                     <li><a href="stay-awake.html">Stay Awake</a></li>
-                                                     <li><a href="fear-the-reaper.html">Fear The Reaper</a></li>
-                                                     <li><a href="embrace-the-night.html">Embrace The Night</a></li>
+                                                    <li><a href="stay-awake.html">Stay Awake</a></li>
+                                                    <li><a href="fear-the-reaper.html">Fear The Reaper</a></li>
+                                                    <li><a href="embrace-the-night.html">Embrace The Night</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
+                                            <li>
+                                                <button class="genric-btn success1" onclick="openCartModal()">
+                                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#ffffff"
+                                                        stroke-width="2" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="cart-icon">
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -76,9 +90,12 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="social_icon text-right">
                                     <ul>
-                                        <li><a href="https://www.facebook.com/daccapps" target="_blank"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="https://x.com/?lang=en" target="_blank"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram"></i> </a></li>
+                                        <li><a href="https://www.facebook.com/daccapps" target="_blank"> <i
+                                                    class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank"> <i
+                                                    class="fa fa-twitter"></i> </a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"> <i
+                                                    class="fa fa-instagram"></i> </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -87,7 +104,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -111,14 +127,31 @@
     </div>
     <!-- slider_area_end -->
 
-    
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <!-- Clear Cart Button in Shop Menu -->
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItemsContainer"
+                style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px;">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <!-- Clear Cart Button below the items -->
+            <button onclick="clearCart()"
+                style="margin-top: 15px; padding: 10px 20px; background-color: #e74c3c; color: white; border: none; cursor: pointer;">
+                Clear Cart
+            </button>
+        </div>
+    </div>
+
     <!-- about_area  -->
     <div class="about_area">
         <div class="container">
             <div class="row align-items-center" data-aos="fade-left">
                 <div class="col-xl-5 col-md-6">
                     <div class="about_thumb">
-                        <img class="img-fluid" src="added-images/meet-the-band.png" alt="An image of the Stage Fright logo with the word 'Stage' over it and the word 'Fright' under it, both written in red. The background is solid black, with dark red splatters on it.">
+                        <img class="img-fluid" src="added-images/meet-the-band.png"
+                            alt="An image of the Stage Fright logo with the word 'Stage' over it and the word 'Fright' under it, both written in red. The background is solid black, with dark red splatters on it.">
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-6">
@@ -128,8 +161,8 @@
                     </div>
                 </div>
             </div>
-            
-        
+
+
             <div class="row align-items-center" data-aos="fade-right">
                 <div class="col-xl-7 col-md-6">
                     <div class="about_info">
@@ -139,14 +172,16 @@
                 </div>
                 <div class="col-xl-5 col-md-6">
                     <div class="about_thumb">
-                        <img class="img-fluid" src="added-images/crowd.png" alt="A picture of a crowd of people with their hands raised at a rock concert. The silhouettes of the band members are vaguely visible through the smoke and stage lights, playing music.">
+                        <img class="img-fluid" src="added-images/crowd.png"
+                            alt="A picture of a crowd of people with their hands raised at a rock concert. The silhouettes of the band members are vaguely visible through the smoke and stage lights, playing music.">
                     </div>
                 </div>
             </div>
             <div class="row align-items-center" data-aos="fade-left">
                 <div class="col-xl-5 col-md-6">
                     <div class="about_thumb">
-                        <img class="img-fluid" src="added-images/show-your-support.png" alt="An image of various merch items with the word 'Insomniac' above them and the word 'Line' written below them, both written in red. The merch in question is the Stay Awake hoodie, the Stay Awake vinyl album, and the Stage Fright beanie. The background of the image is an off-black, being more red-toned, and has dark red splatters on it.">
+                        <img class="img-fluid" src="added-images/show-your-support.png"
+                            alt="An image of various merch items with the word 'Insomniac' above them and the word 'Line' written below them, both written in red. The merch in question is the Stay Awake hoodie, the Stay Awake vinyl album, and the Stage Fright beanie. The background of the image is an off-black, being more red-toned, and has dark red splatters on it.">
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-6">
@@ -167,41 +202,43 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="footer_widget">
-                          <h3 class="footer_title">Newsletter</h3>
-                          <div class="subscribe-from">
-                            <form id="footer-form">
-                            <div class="input-group">
-                                <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
-                                <button type="submit" class="subscribe-button">Subscribe</button>
-                            </div>
-                              </form>
-                              
-                              <!-- Add a <p> tag to display the result -->
+                            <h3 class="footer_title">Newsletter</h3>
+                            <div class="subscribe-from">
+                                <form id="footer-form">
+                                    <div class="input-group">
+                                        <input type="email" name="email" id="emailInput" placeholder="Enter your mail"
+                                            required>
+                                        <button type="submit" class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </form>
+
+                                <!-- Add a <p> tag to display the result -->
                                 <p id="message"></p>
-                              
-                              <script>
-                                // Add an event listener for form submission
-                                document.getElementById('footer-form').addEventListener('submit', function(event) {
-                                  event.preventDefault();  // Prevent the form from submitting
-                                  
-                                  let email = document.getElementById('emailInput').value;
-                                  let messageElement = document.getElementById('message');
-                                  
-                                  // Check if the email contains '@gmail.com'
-                                  if (email.includes('@gmail.com')) {
-                                    messageElement.innerHTML = 'You have subscribed!';  // Display the message
-                                  } else {
-                                    messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
-                                  }
-                                });
-                              </script>
-                              
-                              
-                          </div>
-                          <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
+
+                                <script>
+                                    // Add an event listener for form submission
+                                    document.getElementById('footer-form').addEventListener('submit', function (event) {
+                                        event.preventDefault();  // Prevent the form from submitting
+
+                                        let email = document.getElementById('emailInput').value;
+                                        let messageElement = document.getElementById('message');
+
+                                        // Check if the email contains '@gmail.com'
+                                        if (email.includes('@gmail.com')) {
+                                            messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                                        } else {
+                                            messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                                        }
+                                    });
+                                </script>
+
+
+                            </div>
+                            <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!
+                            </p>
                         </div>
-                      </div>
-                      
+                    </div>
+
                     <div class="col-xl-5 col-md-5 offset-xl-1">
                         <div class="footer_widget footer_thing">
                             <h3 class="footer_title">Contact Us</h3>
@@ -222,22 +259,12 @@
                     <div class="col-xl-7 col-md-6">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
-                    </div>
-                    <div class="col-xl-5 col-md-6">
-                        <div class="footer_links">
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="track.html">Tours</a></li>
-                                <li><a href="merch.html">Merch</a></li>
-                                <li><a href="blog.html">News</a></li>
-                                <li><a href="discography.html">Discography</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -248,10 +275,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- JS here -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-            crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="js/cart.js"></script>
     <script src="js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -283,16 +310,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/main.js"></script>
 
     <script>document.addEventListener("DOMContentLoaded", () => {
-        AOS.init({
-          duration: 1200,   // Set the animation duration in ms
-          once: false,       // Whether animation should happen only once
-          mirror: true,
-          easing: 'ease-in-out', // Animation easing
-        });
-        window.addEventListener('scroll', () => {
-         AOS.refresh();
-      });
-      });</script>
+            AOS.init({
+                duration: 1200,   // Set the animation duration in ms
+                once: false,       // Whether animation should happen only once
+                mirror: true,
+                easing: 'ease-in-out', // Animation easing
+            });
+            window.addEventListener('scroll', () => {
+                AOS.refresh();
+            });
+        });</script>
 </body>
 
 </html>

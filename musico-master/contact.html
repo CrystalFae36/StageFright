@@ -69,6 +69,19 @@
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
+                                            <li>
+                                                <button class="genric-btn success1" onclick="openCartModal()">
+                                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#ffffff"
+                                                        stroke-width="2" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="cart-icon">
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -110,6 +123,22 @@
         </div>
     </div>
     <!--/ bradcam_area  -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <!-- Clear Cart Button in Shop Menu -->
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItemsContainer"
+                style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px;">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <!-- Clear Cart Button below the items -->
+            <button onclick="clearCart()"
+                style="margin-top: 15px; padding: 10px 20px; background-color: #e74c3c; color: white; border: none; cursor: pointer;">
+                Clear Cart
+            </button>
+        </div>
+    </div>
     <!-- ================ contact section start ================= -->
     <section class="contact-section section_padding">
         <div class="container">
@@ -157,7 +186,8 @@
                             <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send
                                 Message</button>
                                 <script>
-                                    const message = document.getElementByClass('contact-hide');
+                                    const form = document.getElementById('contactForm');
+                                    const message = document.querySelector('.contact-hide');
                                     form.addEventListener('submit', function(event) {
                                         message.style.visibility = "visible";
                                     });
@@ -192,43 +222,41 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="footer_widget">
-                            <h3 class="footer_title">Newsletter</h3>
-                            <div class="subscribe-from">
-                                <form id="footer-form">
-                                    <div class="input-group">
-                                        <input type="email" name="email" id="emailInput" placeholder="Enter your mail"
-                                            required>
-                                        <button type="submit" class="subscribe-button">Subscribe</button>
-                                    </div>
-                                </form>
-
-                                <!-- Add a <p> tag to display the result -->
-                                <p id="message"></p>
-
-                                <script>
-                                    // Add an event listener for form submission
-                                    document.getElementById('footer-form').addEventListener('submit', function (event) {
-                                        event.preventDefault();  // Prevent the form from submitting
-
-                                        let email = document.getElementById('emailInput').value;
-                                        let messageElement = document.getElementById('message');
-
-                                        // Check if the email contains '@gmail.com'
-                                        if (email.includes('@gmail.com')) {
-                                            messageElement.innerHTML = 'You have subscribed!';  // Display the message
-                                        } else {
-                                            messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
-                                        }
-                                    });
-                                </script>
-
-
+                          <h3 class="footer_title">Newsletter</h3>
+                          <div class="subscribe-from">
+                            <form id="footer-form">
+                            <div class="input-group">
+                                <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
+                                <button type="submit" class="subscribe-button">Subscribe</button>
                             </div>
-                            <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!
-                            </p>
+                              </form>
+                              
+                              <!-- Add a <p> tag to display the result -->
+                                <p id="message"></p>
+                              
+                              <script>
+                                // Add an event listener for form submission
+                                document.getElementById('footer-form').addEventListener('submit', function(event) {
+                                  event.preventDefault();  // Prevent the form from submitting
+                                  
+                                  let email = document.getElementById('emailInput').value;
+                                  let messageElement = document.getElementById('message');
+                                  
+                                  // Check if the email contains '@gmail.com'
+                                  if (email.includes('@gmail.com')) {
+                                    messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                                  } else {
+                                    messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                                  }
+                                });
+                              </script>
+                              
+                              
+                          </div>
+                          <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
                         </div>
-                    </div>
-
+                      </div>
+                      
                     <div class="col-xl-5 col-md-5 offset-xl-1">
                         <div class="footer_widget footer_thing">
                             <h3 class="footer_title">Contact Us</h3>
@@ -249,25 +277,9 @@
                     <div class="col-xl-7 col-md-6">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
-                    </div>
-                    <div class="col-xl-5 col-md-6">
-                        <div class="footer_links">
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="track.html">Tours</a></li>
-                                <li><a href="merch.html">Merch</a></li>
-                                <li><a href="blog.html">News</a></li>
-                                <li><a href="discography.html">Discography</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -277,6 +289,7 @@
 
 
     <!-- JS here -->
+    <script src="js/cart.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>

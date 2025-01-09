@@ -43,7 +43,8 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="added-images/Finalized Logo.PNG" alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
+                                        <img src="added-images/Finalized Logo.PNG"
+                                            alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
                                     </a>
                                     <a href="index.html">
                                         <h2>Stage Fright</h2>
@@ -68,6 +69,19 @@
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
+                                            <li>
+                                                <button class="genric-btn success1" onclick="openCartModal()">
+                                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#ffffff"
+                                                        stroke-width="2" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="cart-icon">
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -89,7 +103,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -108,53 +121,67 @@
         </div>
     </div>
 
-    <div class="col-lg-8 col-md-8 form-area ticket-form">
-        <h3 class="mb-30 tickets">Merch</h3>
-        <!-- Checkout page structure -->
-        <div id="checkoutItemsContainer">
-            <!-- Cart items will appear here -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <!-- Clear Cart Button in Shop Menu -->
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItemsContainer"
+                style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px;">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <!-- Clear Cart Button below the items -->
+            <button onclick="clearCart()"
+                style="margin-top: 15px; padding: 10px 20px; background-color: #e74c3c; color: white; border: none; cursor: pointer;">
+                Clear Cart
+            </button>
         </div>
-        <div id="totalPriceContainer">
-            <h3 class="merch-total">Total: $<span id="totalPrice">0.00</span></h3>
+    </div>
+
+    <div class="ticket-form">
+        <div class="col-lg-8 col-md-8 form-area centered">
+            <h3 class="mb-30 tickets">Merch</h3>
+            <!-- Checkout page structure -->
+            <div id="checkoutItemsContainer">
+                <!-- Cart items will appear here -->
+            </div>
+            <div id="totalPriceContainer">
+                <h3 class="merch-total">Total: $<span id="totalPrice">0.00</span></h3>
+            </div>
+            <form action="merch.html">
+                <div class="mt-10">
+                    <input type="text" name="Address" placeholder="Address" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Address'" required class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'First Name'" required class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Last Name'" required class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Email address'" required class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="cc" name="CC" placeholder="Credit card number" maxlength="16"
+                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'credit card number'" required
+                        class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input id="month-input" type="month" name="Expiration_date" placeholder="expiration date"
+                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'expiration date'" required
+                        class="single-input">
+                </div>
+                <div class="mt-10">
+                    <input type="text" name="CC" placeholder="ccv" maxlength="3" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'CCV'" required class="single-input">
+                </div>
+                <button type="submit" class="genric-btn success circle">Continue</button>
+            </form>
         </div>
-        <form action="merch.html">
-            <div class="mt-10">
-                <input type="text" name="Address" placeholder="Address" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Address'" required class="single-input">
-            </div>
-            <div class="mt-10">
-                <input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'First Name'" required class="single-input">
-            </div>
-            <div class="mt-10">
-                <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Last Name'" required class="single-input">
-            </div>
-            <div class="mt-10">
-                <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Email address'" required class="single-input">
-            </div>
-            <div class="mt-10">
-                <input type="cc" name="CC" placeholder="Credit card number" maxlength="16"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'credit card number'" required
-                    class="single-input">
-            </div>
-            <div class="mt-10">
-                <input id="month-input" type="month" name="Expiration_date" placeholder="expiration date"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'expiration date'" required
-                    class="single-input">
-            </div>
-            <div class="mt-10">
-                <input type="text" name="CC" placeholder="ccv" maxlength="3" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'CCV'" required class="single-input">
-            </div>
-
-
-            <button type="submit" class="genric-btn success circle">Continue</button>
-
-
-
-        </form>
     </div>
 
     <!-- footer start -->
@@ -223,19 +250,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
-                    <div class="col-xl-5 col-md-6">
-                        <div class="footer_links">
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="track.html">Tours</a></li>
-                                <li><a href="merch.html">Merch</a></li>
-                                <li><a href="blog.html">News</a></li>
-                                <li><a href="discography.html">Discography</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -248,6 +262,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
+    <script src="js/cart.js"></script>
     <script src="js/checkut.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>

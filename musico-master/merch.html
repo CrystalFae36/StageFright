@@ -43,7 +43,8 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="added-images/Finalized Logo.PNG" alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
+                                        <img src="added-images/Finalized Logo.PNG"
+                                            alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
                                     </a>
                                     <a href="index.html">
                                         <h2>Stage Fright</h2>
@@ -68,8 +69,19 @@
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li><button class="genric-btn success1" onclick="openCartModal()">View
-                                                    Cart</button></li>
+                                            <li>
+                                                <button class="genric-btn success1" onclick="openCartModal()">
+                                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#ffffff"
+                                                        stroke-width="2" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="cart-icon">
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -145,7 +157,8 @@
                                 <div class="row">
                                     <div class="card">
                                         <div class="image_container_merch">
-                                            <img src="added-images/beanie mockup bpa.png" class="merch image" alt="A picture of the Stage Fright beanie. The hat is black, with the Stage Fright logo on it and the words 'Stage Fright' written in red in a circle around it. The brim also has the same red text on it, but instead of being written in a circle, it's written in a straight line across.">
+                                            <img src="added-images/beanie mockup bpa.png" class="merch image"
+                                                alt="A picture of the Stage Fright beanie. The hat is black, with the Stage Fright logo on it and the words 'Stage Fright' written in red in a circle around it. The brim also has the same red text on it, but instead of being written in a circle, it's written in a straight line across.">
                                             <path
                                                 d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
                                             </path>
@@ -157,16 +170,24 @@
                                         <div class="size">
                                             <span>Size</span>
                                             <ul class="list-size">
-                                                <li class="item-list"><button onclick="selectSize('XS')" class="item-list-button">XS</button></li>
-                                                <li class="item-list"><button onclick="selectSize('S')" class="item-list-button">S</button></li>
-                                                <li class="item-list"><button onclick="selectSize('M')" class="item-list-button">M</button></li>
-                                                <li class="item-list"><button onclick="selectSize('L')" class="item-list-button">L</button></li>
-                                                <li class="item-list"><button onclick="selectSize('XL')" class="item-list-button">XL</button></li>
+                                                <li class="item-list"><button onclick="selectSize('XS')"
+                                                        class="item-list-button">XS</button></li>
+                                                <li class="item-list"><button onclick="selectSize('S')"
+                                                        class="item-list-button">S</button></li>
+                                                <li class="item-list"><button onclick="selectSize('M')"
+                                                        class="item-list-button">M</button></li>
+                                                <li class="item-list"><button onclick="selectSize('L')"
+                                                        class="item-list-button">L</button></li>
+                                                <li class="item-list"><button onclick="selectSize('XL')"
+                                                        class="item-list-button">XL</button></li>
                                             </ul>
                                         </div>
                                         <div class="action">
                                             <div class="price">
                                                 <span class="merch-total">$25.99</span>
+                                            </div>
+                                            <div id="toast" style="display:none; position: fixed; bottom: 20px; left: 50%; transform: translateY(-1900%); background-color: #333; color: white; padding: 10px 20px; border-radius: 5px; font-size: 16px; z-index: 1000;">
+                                                Item added to cart!
                                             </div>
                                             <button class="cart-button"
                                                 onclick="addToCart('Stage Fright Beanie', 25.99, true)">
@@ -182,7 +203,8 @@
                                     </div>
                                     <div class="card">
                                         <div class="image_container_merch">
-                                            <img src="added-images/trasnparent t-shirt-merch.png" class="merch image" alt="A picture of the Stage Fright t-shirt, which is an off-black with the Stage Fright logo on it and the words 'Stage Fright' written in red in a circle around it. The sleeves are red, as are the hem and the collar.">
+                                            <img src="added-images/trasnparent t-shirt-merch.png" class="merch image"
+                                                alt="A picture of the Stage Fright t-shirt, which is an off-black with the Stage Fright logo on it and the words 'Stage Fright' written in red in a circle around it. The sleeves are red, as are the hem and the collar.">
                                             <path
                                                 d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
                                             </path>
@@ -194,11 +216,16 @@
                                         <div class="size">
                                             <span>Size</span>
                                             <ul class="list-size">
-                                                <li class="item-list"><button onclick="selectSize('XS')" class="item-list-button">XS</button></li>
-                                                <li class="item-list"><button onclick="selectSize('S')" class="item-list-button">S</button></li>
-                                                <li class="item-list"><button onclick="selectSize('M')" class="item-list-button">M</button></li>
-                                                <li class="item-list"><button onclick="selectSize('L')" class="item-list-button">L</button></li>
-                                                <li class="item-list"><button onclick="selectSize('XL')" class="item-list-button">XL</button></li>
+                                                <li class="item-list"><button onclick="selectSize('XS')"
+                                                        class="item-list-button">XS</button></li>
+                                                <li class="item-list"><button onclick="selectSize('S')"
+                                                        class="item-list-button">S</button></li>
+                                                <li class="item-list"><button onclick="selectSize('M')"
+                                                        class="item-list-button">M</button></li>
+                                                <li class="item-list"><button onclick="selectSize('L')"
+                                                        class="item-list-button">L</button></li>
+                                                <li class="item-list"><button onclick="selectSize('XL')"
+                                                        class="item-list-button">XL</button></li>
                                             </ul>
                                         </div>
                                         <div class="action">
@@ -219,7 +246,8 @@
                                     </div>
                                     <div class="card">
                                         <div class="image_container_merch">
-                                            <img src="added-images/hoodie bpa merch.png" class="merch image" alt="A picture of the Stay Awake hoodie, which is black and has the Stay Awake album cover on the front of it. Above the album cover is red text that reads 'Stay Awake.' The words 'Stay Awake' also appear in white repeated over and over on the sleeves.">
+                                            <img src="added-images/hoodie bpa merch.png" class="merch image"
+                                                alt="A picture of the Stay Awake hoodie, which is black and has the Stay Awake album cover on the front of it. Above the album cover is red text that reads 'Stay Awake.' The words 'Stay Awake' also appear in white repeated over and over on the sleeves.">
                                             <path
                                                 d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
                                             </path>
@@ -231,11 +259,16 @@
                                         <div class="size">
                                             <span>Size</span>
                                             <ul class="list-size" id="needs-size">
-                                                <li class="item-list"><button onclick="selectSize('XS')" class="item-list-button">XS</button></li>
-                                                <li class="item-list"><button onclick="selectSize('S')" class="item-list-button">S</button></li>
-                                                <li class="item-list"><button onclick="selectSize('M')" class="item-list-button">M</button></li>
-                                                <li class="item-list"><button onclick="selectSize('L')" class="item-list-button">L</button></li>
-                                                <li class="item-list"><button onclick="selectSize('XL')" class="item-list-button">XL</button></li>
+                                                <li class="item-list"><button onclick="selectSize('XS')"
+                                                        class="item-list-button">XS</button></li>
+                                                <li class="item-list"><button onclick="selectSize('S')"
+                                                        class="item-list-button">S</button></li>
+                                                <li class="item-list"><button onclick="selectSize('M')"
+                                                        class="item-list-button">M</button></li>
+                                                <li class="item-list"><button onclick="selectSize('L')"
+                                                        class="item-list-button">L</button></li>
+                                                <li class="item-list"><button onclick="selectSize('XL')"
+                                                        class="item-list-button">XL</button></li>
                                             </ul>
                                         </div>
                                         <div class="action">
@@ -271,7 +304,8 @@
                                 <div class="row">
                                     <div class="card">
                                         <div class="image_container_merch">
-                                            <img src="added-images/stay-awake-vinyl-merch.png" class="merch image" alt="A picture of the Stay Awake vinyl. The album cover shows the standard Stay Awake album cover art, but with the added words 'Stay Awake' in red text behind the person, repeated over and over. The vinyl record itself is black, with a red center and the Stage Fright logo printed in the middle.">
+                                            <img src="added-images/stay-awake-vinyl-merch.png" class="merch image"
+                                                alt="A picture of the Stay Awake vinyl. The album cover shows the standard Stay Awake album cover art, but with the added words 'Stay Awake' in red text behind the person, repeated over and over. The vinyl record itself is black, with a red center and the Stage Fright logo printed in the middle.">
                                             <path
                                                 d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
                                             </path>
@@ -298,7 +332,9 @@
                                     </div>
                                     <div class="card">
                                         <div class="image_container_merch">
-                                            <img src="added-images/embrace-the-night-vinyl-album.png" class="merch image" alt="A picture of the Embrace the Night vinyl. The album cover is the standard Embrace the Night album art, with a black and blue border and the words 'Embrace the Night' repeated over and over on it. The vinyl record itself is black with a blue ring bordering the middle and a white center, reminiscent of an eye.">
+                                            <img src="added-images/embrace-the-night-vinyl-album.png"
+                                                class="merch image"
+                                                alt="A picture of the Embrace the Night vinyl. The album cover is the standard Embrace the Night album art, with a black and blue border and the words 'Embrace the Night' repeated over and over on it. The vinyl record itself is black with a blue ring bordering the middle and a white center, reminiscent of an eye.">
                                             <path
                                                 d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
                                             </path>
@@ -325,7 +361,9 @@
                                     </div>
                                     <div class="card">
                                         <div class="image_container_merch">
-                                            <img src="added-images/fear-the-reaper-VINYL-ALBUM-merch.png" class="merch image" alt="A picture of the Fear The Reaper vinyl album. The album cover has the standard Fear The Reaper album cover art. The vinyl record itself is black, with a red center and the Stage Fright logo printed in the middle.">
+                                            <img src="added-images/fear-the-reaper-VINYL-ALBUM-merch.png"
+                                                class="merch image"
+                                                alt="A picture of the Fear The Reaper vinyl album. The album cover has the standard Fear The Reaper album cover art. The vinyl record itself is black, with a red center and the Stage Fright logo printed in the middle.">
                                             <path
                                                 d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
                                             </path>
@@ -368,41 +406,43 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="footer_widget">
-                          <h3 class="footer_title">Newsletter</h3>
-                          <div class="subscribe-from">
-                            <form id="footer-form">
-                            <div class="input-group">
-                                <input type="email" name="email" id="emailInput" placeholder="Enter your mail" required>
-                                <button type="submit" class="subscribe-button">Subscribe</button>
-                            </div>
-                              </form>
-                              
-                              <!-- Add a <p> tag to display the result -->
+                            <h3 class="footer_title">Newsletter</h3>
+                            <div class="subscribe-from">
+                                <form id="footer-form">
+                                    <div class="input-group">
+                                        <input type="email" name="email" id="emailInput" placeholder="Enter your mail"
+                                            required>
+                                        <button type="submit" class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </form>
+
+                                <!-- Add a <p> tag to display the result -->
                                 <p id="message"></p>
-                              
-                              <script>
-                                // Add an event listener for form submission
-                                document.getElementById('footer-form').addEventListener('submit', function(event) {
-                                  event.preventDefault();  // Prevent the form from submitting
-                                  
-                                  let email = document.getElementById('emailInput').value;
-                                  let messageElement = document.getElementById('message');
-                                  
-                                  // Check if the email contains '@gmail.com'
-                                  if (email.includes('@gmail.com')) {
-                                    messageElement.innerHTML = 'You have subscribed!';  // Display the message
-                                  } else {
-                                    messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
-                                  }
-                                });
-                              </script>
-                              
-                              
-                          </div>
-                          <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!</p>
+
+                                <script>
+                                    // Add an event listener for form submission
+                                    document.getElementById('footer-form').addEventListener('submit', function (event) {
+                                        event.preventDefault();  // Prevent the form from submitting
+
+                                        let email = document.getElementById('emailInput').value;
+                                        let messageElement = document.getElementById('message');
+
+                                        // Check if the email contains '@gmail.com'
+                                        if (email.includes('@gmail.com')) {
+                                            messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                                        } else {
+                                            messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                                        }
+                                    });
+                                </script>
+
+
+                            </div>
+                            <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!
+                            </p>
                         </div>
-                      </div>
-                      
+                    </div>
+
                     <div class="col-xl-5 col-md-5 offset-xl-1">
                         <div class="footer_widget footer_thing">
                             <h3 class="footer_title">Contact Us</h3>
@@ -423,22 +463,12 @@
                     <div class="col-xl-7 col-md-6">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
-                    </div>
-                    <div class="col-xl-5 col-md-6">
-                        <div class="footer_links">
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="track.html">Tours</a></li>
-                                <li><a href="merch.html">Merch</a></li>
-                                <li><a href="blog.html">News</a></li>
-                                <li><a href="discography.html">Discography</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -451,6 +481,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
+    <script src="js/cart.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>

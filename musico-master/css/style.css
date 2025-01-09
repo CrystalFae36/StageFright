@@ -12,6 +12,20 @@
 	font-weight: normal;
 	font-style: normal;
 }
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s;
+}
+
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_extend.scss */
 
 /* Modal Overlay */
@@ -3092,7 +3106,7 @@ h3 {
 /* line 173, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
 .footer .copy-right_text .copy_right {
   font-size: 13px;
-  color: #C7C7C7;
+  color: #000000;
   margin-bottom: 0;
   font-weight: 400;
 }
@@ -3106,7 +3120,7 @@ h3 {
 
 /* line 181, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
 .footer .copy-right_text .copy_right a {
-  color: #ED1B1B;
+  color: #000000;
 }
 
 /* line 185, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
@@ -4304,6 +4318,8 @@ h3 {
 .merch-total{
   font-family: "Muli", sans-serif;
   font-size: 20px;
+  padding-top:10px;
+  padding-bottom:5px;
 }
 
 /*=================== contact banner end ====================*/
@@ -4357,13 +4373,21 @@ h3 {
 }
 
 .ticket-form{
-  padding-left:45px;
+  display:flex;
+  justify-content:center;
+}
+
+.centered{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
 }
 
 .tickets{
   font-size:55px;
   font-weight:0;
-  padding-left:15px;
 }
 
 /*=================== contact form end ====================*/
@@ -4679,6 +4703,7 @@ h6 {
   color: #fff;
   background: #d10a0a;
   border: 1px solid transparent;
+  width:100%;
 }
 
 .genric-btn.success1 {
@@ -5049,13 +5074,13 @@ h6 {
 
 /* line 515, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .single-input {
-  border: none;
+ border: none;
  padding: 1rem;
  border-radius: 1rem;
  background: #111111;
- box-shadow: 20px 20px 60px #111111;
  transition: 0.3s;
  color: #ffffff;
+ width:50rem;
 }
 
 /* line 523, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */

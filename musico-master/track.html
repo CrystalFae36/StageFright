@@ -43,7 +43,8 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="added-images/Finalized Logo.PNG" alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
+                                        <img src="added-images/Finalized Logo.PNG"
+                                            alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
                                     </a>
                                     <a href="index.html">
                                         <h2>Stage Fright</h2>
@@ -68,8 +69,19 @@
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li><button class="genric-btn success1" onclick="openCartModal()">View
-                                                    Cart</button></li>
+                                            <li>
+                                                <button class="genric-btn success1" onclick="openCartModal()">
+                                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#ffffff"
+                                                        stroke-width="2" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="cart-icon">
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -77,9 +89,12 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="social_icon text-right">
                                     <ul>
-                                        <li><a href="https://www.facebook.com/daccapps" target="_blank"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="https://x.com/?lang=en" target="_blank"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram"></i> </a></li>
+                                        <li><a href="https://www.facebook.com/daccapps" target="_blank"> <i
+                                                    class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank"> <i
+                                                    class="fa fa-twitter"></i> </a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"> <i
+                                                    class="fa fa-instagram"></i> </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -88,7 +103,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -125,7 +139,7 @@
             </button>
         </div>
     </div>
-    </div>
+
     <div class="music_area music_gallery inc_padding">
         <div class="container request">
             <div class="row align-items-center justify-content-center mb-20">
@@ -143,7 +157,9 @@
                         </div>
                         <div class="col-xl-3 col-md-3">
                             <div class="music_btn">
-                                <p>Items in Cart: <span id="cart-counter">0</span></p>
+                                <div id="toast" style="display:none; position: fixed; bottom: 20px; left: 50%; transform: translateY(-1900%); background-color: #333; color: white; padding: 10px 20px; border-radius: 5px; font-size: 16px; z-index: 1000;">
+                                    Item added to cart!
+                                </div>
                                 <button onclick="addToCart('Arlenes Grocery ticket', 50, false)"
                                     class="boxed-btn">add to cart</button>
                             </div>
@@ -329,24 +345,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
-                    <div class="col-xl-5 col-md-6">
-                        <div class="footer_links">
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="track.html">Tours</a></li>
-                                <li><a href="merch.html">Merch</a></li>
-                                <li><a href="blog.html">News</a></li>
-                                <li><a href="discography.html">Discography</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </footer>
     <!--/ footer end  -->
+
+    <!--<div class="footer-cover"></div>-->
+
 
     <!-- link that opens popup -->
 

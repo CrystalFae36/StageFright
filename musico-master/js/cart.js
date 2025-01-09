@@ -1,15 +1,23 @@
 let selectedSize = ''; // To store the selected size
-
 // Function to select a size
 function selectSize(size) {
   selectedSize = size;
 }
+function showToast(message) {
+  var toast = document.getElementById('toast');
+  toast.innerHTML = message;
+  toast.style.display = 'block';
 
+  setTimeout(function() {
+      toast.style.display = 'none';
+  }, 3000); // Hide after 3 seconds
+}
 // Function to add an item to the cart
 let cartCount = 0;
 function addToCart(itemName, itemPrice, requiresSize = false) {
+  showToast('Item added to cart!');
   if (requiresSize && !selectedSize) {
-    alert('Please select a size before adding to the cart!');
+    showToast('Please select a size before adding to the cart!');
     return;
   }
 

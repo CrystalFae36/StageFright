@@ -44,7 +44,8 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="added-images/Finalized Logo.PNG" alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
+                                        <img src="added-images/Finalized Logo.PNG"
+                                            alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
                                     </a>
                                     <a href="index.html">
                                         <h2>Stage Fright</h2>
@@ -63,12 +64,25 @@
                                             </li>
                                             <li><a href="discography.html">Discography <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                     <li><a href="stay-awake.html">Stay Awake</a></li>
-                                                     <li><a href="fear-the-reaper.html">Fear The Reaper</a></li>
-                                                     <li><a href="embrace-the-night.html">Embrace The Night</a></li>
+                                                    <li><a href="stay-awake.html">Stay Awake</a></li>
+                                                    <li><a href="fear-the-reaper.html">Fear The Reaper</a></li>
+                                                    <li><a href="embrace-the-night.html">Embrace The Night</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
+                                            <li>
+                                                <button class="genric-btn success1" onclick="openCartModal()">
+                                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#ffffff"
+                                                        stroke-width="2" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="cart-icon">
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -76,9 +90,12 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="social_icon text-right">
                                     <ul>
-                                        <li><a href="https://www.facebook.com/daccapps" target="_blank"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="https://x.com/?lang=en" target="_blank"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram"></i> </a></li>
+                                        <li><a href="https://www.facebook.com/daccapps" target="_blank"> <i
+                                                    class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank"> <i
+                                                    class="fa fa-twitter"></i> </a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"> <i
+                                                    class="fa fa-instagram"></i> </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -107,6 +124,23 @@
         </div>
     </div>
     <!--/ bradcam_area  -->
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <!-- Clear Cart Button in Shop Menu -->
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItemsContainer"
+                style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px;">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <!-- Clear Cart Button below the items -->
+            <button onclick="clearCart()"
+                style="margin-top: 15px; padding: 10px 20px; background-color: #e74c3c; color: white; border: none; cursor: pointer;">
+                Clear Cart
+            </button>
+        </div>
+    </div>
 
     <!-- About the band-->
     <section class="sample-text-area">
@@ -282,19 +316,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
-                    <div class="col-xl-5 col-md-6">
-                        <div class="footer_links">
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="track.html">Tours</a></li>
-                                <li><a href="merch.html">Merch</a></li>
-                                <li><a href="blog.html">News</a></li>
-                                <li><a href="discography.html">Discography</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -308,6 +329,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
             crossorigin="anonymous">
     </script>
+    <script src="js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
