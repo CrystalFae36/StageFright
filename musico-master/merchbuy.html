@@ -139,48 +139,53 @@
     </div>
 
     <div class="ticket-form">
-        <div class="col-lg-8 col-md-8 form-area centered">
-            <h3 class="mb-30 tickets">Merch</h3>
-            <!-- Checkout page structure -->
-            <div id="checkoutItemsContainer">
-                <!-- Cart items will appear here -->
+        <div class="checkout">
+            <div class="col-lg-8 col-md-8 form-area">
+                <h3 class="mb-30 tickets">Merch</h3>
+                <!-- Checkout page structure -->
+                <div id="checkoutItemsContainer">
+                    <!-- Cart items will appear here -->
+                </div>
+                <div id="totalPriceContainer">
+                    <h3 class="merch-total">Total: $<span id="totalPrice">0.00</span></h3>
+                </div>
             </div>
-            <div id="totalPriceContainer">
-                <h3 class="merch-total">Total: $<span id="totalPrice">0.00</span></h3>
+        </div>
+            <div class="form-area shop">
+                <form action="thankyou.html" class="buy">
+                    <div class="mt-10">
+                        <input type="text" name="Address" placeholder="Address" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Address'" required class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'First Name'" required class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Last Name'" required class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Email address'" required class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="cc" name="CC" placeholder="Credit card number" maxlength="16"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'credit card number'" required
+                            class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input id="month-input" type="month" name="Expiration_date" placeholder="expiration date"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'expiration date'" required
+                            class="single-input">
+                    </div>
+                    <div class="mt-10">
+                        <input type="text" name="CC" placeholder="ccv" maxlength="3" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'CCV'" required class="single-input">
+                    </div>
+                    <button type="submit" class="genric-btn success circle shop">Continue</button>
+                </form>
             </div>
-            <form action="merch.html">
-                <div class="mt-10">
-                    <input type="text" name="Address" placeholder="Address" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Address'" required class="single-input">
-                </div>
-                <div class="mt-10">
-                    <input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'First Name'" required class="single-input">
-                </div>
-                <div class="mt-10">
-                    <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Last Name'" required class="single-input">
-                </div>
-                <div class="mt-10">
-                    <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Email address'" required class="single-input">
-                </div>
-                <div class="mt-10">
-                    <input type="cc" name="CC" placeholder="Credit card number" maxlength="16"
-                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'credit card number'" required
-                        class="single-input">
-                </div>
-                <div class="mt-10">
-                    <input id="month-input" type="month" name="Expiration_date" placeholder="expiration date"
-                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'expiration date'" required
-                        class="single-input">
-                </div>
-                <div class="mt-10">
-                    <input type="text" name="CC" placeholder="ccv" maxlength="3" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'CCV'" required class="single-input">
-                </div>
-                <button type="submit" class="genric-btn success circle">Continue</button>
-            </form>
         </div>
     </div>
 

@@ -1783,19 +1783,15 @@ h3 {
   background-image: url("../added-images/Stage costume Ace FINALIZED.png");
 }
 
-
 .about-img.scarlet{
   background-image: url("../added-images/Scarlet Normal.png");
   background-size: cover;
   transition: background-image 0.5s ease-in-out;
 }
+
 .about-img.scarlet:hover{
   background-image: url("../added-images/Scarlet COSTUME .png");
 }
-
-
-
-
 
 .meet{
   font-size:75px;
@@ -4375,14 +4371,14 @@ h3 {
 .ticket-form{
   display:flex;
   justify-content:center;
+  box-sizing:border-box;
+  flex-flow:row wrap;
 }
 
-.centered{
+.checkout{
   display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  
+  flex-flow:row wrap;
+  flex-basis:40%
 }
 
 .tickets{
@@ -4703,7 +4699,10 @@ h6 {
   color: #fff;
   background: #d10a0a;
   border: 1px solid transparent;
-  width:100%;
+}
+
+.genric-btn.success.circle.shop {
+  width:5rem;
 }
 
 .genric-btn.success1 {
@@ -5080,7 +5079,7 @@ h6 {
  background: #111111;
  transition: 0.3s;
  color: #ffffff;
- width:50rem;
+ width:20em;
 }
 
 /* line 523, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
@@ -5781,6 +5780,34 @@ h6 {
 .mt-10 {
   margin-top: 10px;
   margin-bottom:10px;
+}
+
+.buy{
+  padding-left:3em;
+}
+
+.form-area.shop{
+  width:27em;
+}
+
+@media (max-width: 375px) {
+  .buy{
+    padding-left:1.5em;
+  }
+}
+
+@media (max-width: 882px) {
+  .buy{
+    padding-left:.75em;
+  }
+}
+
+.thank-you{
+  font-family:'Muli', sans-serif;
+  color:#fafafa;
+  margin-top:150px;
+  margin-bottom:150px;
+  font-weight:50px;
 }
 
 /* line 1089, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
