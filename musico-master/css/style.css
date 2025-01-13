@@ -47,7 +47,7 @@
   flex-direction: row;
 }
 .card {
-  --bg-card: #27272a;
+  --bg-card: #212121;
   --primary: #6d28d9;
   --primary-800: #4c1d95;
   --primary-shadow: #2e1065;
@@ -1800,7 +1800,7 @@ h3 {
 .age{
   font-style:italic;
   font-size:16px;
-  color: #727272;
+  color: #808080;
   font-weight: 400;
   margin-top: 9px;
   font-family: "Muli", sans-serif;
@@ -1816,7 +1816,7 @@ h3 {
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp {
   padding-bottom: 100px;
-  background-color:#242424;
+  background-color:#2a2a2a;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -2203,7 +2203,7 @@ h3 {
   margin-top: 0;
   padding-bottom: 50px;
   padding-top: 65px;
-  background: #242424;
+  background: #2a2a2a;
 }
 
 @media (max-width: 767px) {
@@ -4378,7 +4378,7 @@ h3 {
 .checkout{
   display:flex;
   flex-flow:row wrap;
-  flex-basis:40%
+  flex-basis:32.5%
 }
 
 .tickets{
@@ -4466,7 +4466,7 @@ h3 {
 
 /* line 75, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .sample-text-area {
-  background: #242424;
+  background: #2a2a2a;
   padding: 100px 0 70px 0;
 }
 
@@ -4868,7 +4868,7 @@ h6 {
 
 /* line 357, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .progress-table {
-  background: #242424;
+  background: #2a2a2a;
   padding: 15px 0px 30px 0px;
   min-width: 800px;
 }
@@ -5079,7 +5079,7 @@ h6 {
  background: #111111;
  transition: 0.3s;
  color: #ffffff;
- width:20em;
+ width:35em;
 }
 
 /* line 523, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
@@ -5089,6 +5089,25 @@ h6 {
  transition: 0.3s;
  caret-color: #FFFFFF;
 }
+
+@media (max-width: 1213px) {
+  .single-input{
+    width:30em;
+  }
+}
+
+@media (max-width: 973px) {
+  .single-input{
+    width:27em;
+  }
+}
+
+@media (max-width: 882px) {
+  .single-input{
+    width:20em;
+  }
+}
+
 
 /* line 528, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .input-group-icon {
