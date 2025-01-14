@@ -31,11 +31,6 @@ function updateTotalPrice() {
   totalPriceElement.textContent = totalPrice;
 }
 
-// Function to handle "Finish Purchase" button click
-function finishPurchase() {
-  alert("Thank you for your purchase!");
-  // Implement checkout functionality or redirect here
-}
 
 // Load checkout items and display them on page load
 document.addEventListener("DOMContentLoaded", () => {
