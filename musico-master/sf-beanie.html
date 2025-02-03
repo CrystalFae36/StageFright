@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Stage Fright - Launch of Our New Website!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="added-images/Finalized Logo.PNG">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="added-images/Finalized Logo.PNG"
+                                            alt="The Stage Fright logo, which is a red, dripping skull with the mouth open and part of the cranium caved in. It's stylized drawn art.">
+                                    </a>
+                                    <a href="index.html">
+                                        <h2>Stage Fright</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a class="active" href="index.html">home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="track.html">tours</a></li>
+                                            <li><a href="merch.html">Merch</a></li>
+                                            <li><a href="blog.html">news</a>
+                                            </li>
+                                            <li><a href="discography.html">Discography <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="stay-awake.html">Stay Awake</a></li>
+                                                    <li><a href="fear-the-reaper.html">Fear The Reaper</a></li>
+                                                    <li><a href="embrace-the-night.html">Embrace The Night</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li>
+                                                <button class="genric-btn success1" onclick="openCartModal()">
+                                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#ffffff"
+                                                        stroke-width="2" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="cart-icon">
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="social_icon text-right">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/daccapps" target="_blank"> <i
+                                                    class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank"> <i
+                                                    class="fa fa-twitter"></i> </a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"> <i
+                                                    class="fa fa-instagram"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area breadcam_bg_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>News</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <!-- Clear Cart Button in Shop Menu -->
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItemsContainer"
+                style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px;">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <!-- Clear Cart Button below the items -->
+            <button onclick="clearCart()"
+                style="margin-top: 15px; padding: 10px 20px; background-color: #e74c3c; color: white; border: none; cursor: pointer;">
+                Clear Cart
+            </button>
+        </div>
+    </div>
+    <!--================Blog Area =================-->
+    <section class="blog_area single-post-area section-padding view-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="single-post">
+                        <div class="feature-img">
+                            <img class="img-fluid" src="added-images/web-launch-article-image.png"
+                                alt="A picture of a MacBook Pro and a tablet, both of which are displaying the home page of the Stage Fright website. The background is red with black gradients in some places.">
+                        </div>
+                        <div class="blog_details">
+                            <h2>Launch of Our New Website!
+                            </h2>
+                            <ul class="blog-info-link mt-3 mb-4">
+                                <li>December 25th, 2024</li>
+                                <li>Cora Astrite</li>
+                            </ul>
+                            <p class="excert">
+                                Finally, after tons of hard work and dedication, the brand-new Stage Fright website is
+                                now up and running!
+                            </p>
+                            <p>
+                                Hi there adventurers! As you all know, we've been taking somewhat of a break recently to
+                                work on a few behind-the-scenes things! And finally, we've finished one of them! This
+                                shiny new website serves as the main hub for anything we do regarding announcements,
+                                merch, tours, and albums!
+                            </p>
+                            <p>
+                                You'll also notice that we got the ability to send you newsletters, too! You can sign up
+                                for these types of announcements being delivered to your inbox using the text box and
+                                button to the right.
+                            </p>
+                            <p>
+                                Have a fun time exploring our new site, adventurer!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ Blog Area end =================-->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">Newsletter</h3>
+                            <div class="subscribe-from">
+                                <form id="footer-form">
+                                    <div class="input-group">
+                                        <input type="email" name="email" id="emailInput" placeholder="Enter your mail"
+                                            required>
+                                        <button type="submit" class="subscribe-button">Subscribe</button>
+                                    </div>
+                                </form>
+
+                                <!-- Add a <p> tag to display the result -->
+                                <p id="message"></p>
+
+                                <script>
+                                    // Add an event listener for form submission
+                                    document.getElementById('footer-form').addEventListener('submit', function (event) {
+                                        event.preventDefault();  // Prevent the form from submitting
+
+                                        let email = document.getElementById('emailInput').value;
+                                        let messageElement = document.getElementById('message');
+
+                                        // Check if the email contains '@gmail.com'
+                                        if (email.includes('@gmail.com')) {
+                                            messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                                        } else {
+                                            messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                                        }
+                                    });
+                                </script>
+
+
+                            </div>
+                            <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-md-5 offset-xl-1">
+                        <div class="footer_widget footer_thing">
+                            <h3 class="footer_title">Contact Us</h3>
+                            <ul>
+                                <li><a href="contact.html">support@stagefright.com</a></li>
+                                <li><a href="contact.html">request@stagefright.com</a></li>
+                                <li><a href="contact.html">fanmail@stagefright.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-7 col-md-6">
+                        <p class="copy_right">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
