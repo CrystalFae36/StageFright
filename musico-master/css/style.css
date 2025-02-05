@@ -192,6 +192,41 @@
   width: 1rem;
 }
 
+#toast {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-100px, -800px);
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.card{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+
+}
+
+.item-sale{
+  padding-top:30px;
+  padding-bottom:50px;
+}
+@media (max-width: 600px){
+  
+}
+
+
+.row{
+  display:flex;
+  justify-content:center;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed;

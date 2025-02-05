@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Stage Fright - Launch of Our New Website!</title>
+    <title>Stage Fright - Stage Fright Beanie</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -113,7 +113,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>News</h3>
+                        <h3>Merch</h3>
                     </div>
                 </div>
             </div>
@@ -138,40 +138,50 @@
         </div>
     </div>
     <!--================Blog Area =================-->
-    <section class="blog_area single-post-area section-padding view-item">
+    <section class="item-sale">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 posts-list">
                     <div class="single-post">
                         <div class="feature-img">
-                            <img class="img-fluid" src="added-images/web-launch-article-image.png"
-                                alt="A picture of a MacBook Pro and a tablet, both of which are displaying the home page of the Stage Fright website. The background is red with black gradients in some places.">
+                            <img class="img-fluid" src="added-images/beanie mockup bpa.png"
+                                alt="A picture of the Stage Fright beanie. The hat is black, with the Stage Fright logo on it and the words 'Stage Fright' written in red in a circle around it. The brim also has the same red text on it, but instead of being written in a circle, it's written in a straight line across.">
                         </div>
                         <div class="blog_details">
-                            <h2>Launch of Our New Website!
-                            </h2>
+                            <h2>Stage Fright Beanie</h2>
                             <ul class="blog-info-link mt-3 mb-4">
-                                <li>December 25th, 2024</li>
-                                <li>Cora Astrite</li>
+                                <li>$25.99</li>
                             </ul>
+                            <div class="size">
+                                <span>Size</span>
+                                <ul class="list-size">
+                                    <li class="item-list"><button onclick="selectSize('XS')"
+                                            class="item-list-button">XS</button></li>
+                                    <li class="item-list"><button onclick="selectSize('S')"
+                                            class="item-list-button">S</button></li>
+                                    <li class="item-list"><button onclick="selectSize('M')"
+                                            class="item-list-button">M</button></li>
+                                    <li class="item-list"><button onclick="selectSize('L')"
+                                            class="item-list-button">L</button></li>
+                                    <li class="item-list"><button onclick="selectSize('XL')"
+                                            class="item-list-button">XL</button></li>
+                                </ul>
+                            </div>
                             <p class="excert">
-                                Finally, after tons of hard work and dedication, the brand-new Stage Fright website is
-                                now up and running!
+                                Is it cold outside, or is it just us? Not to worry! Here to rescue you from these cold winter months is the Stage Fright Beanie! Thickly knit from wool, it's guaranteed to keep you warm and stylish.
                             </p>
-                            <p>
-                                Hi there adventurers! As you all know, we've been taking somewhat of a break recently to
-                                work on a few behind-the-scenes things! And finally, we've finished one of them! This
-                                shiny new website serves as the main hub for anything we do regarding announcements,
-                                merch, tours, and albums!
-                            </p>
-                            <p>
-                                You'll also notice that we got the ability to send you newsletters, too! You can sign up
-                                for these types of announcements being delivered to your inbox using the text box and
-                                button to the right.
-                            </p>
-                            <p>
-                                Have a fun time exploring our new site, adventurer!
-                            </p>
+                            <div id="toast">
+                                Item added to cart!
+                            </div>
+                            <button class="cart-button" onclick="addToCart('Stage Fright Beanie', 25.99, true)">
+                                <svg class="cart-icon" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                                        stroke-linejoin="round" stroke-linecap="round"></path>
+                                </svg>
+                                <span>Add to cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -259,8 +269,8 @@
 
 
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
