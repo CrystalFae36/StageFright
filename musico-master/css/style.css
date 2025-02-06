@@ -52,17 +52,15 @@
   --light: #d9d9d9;
   --zinc-800: #18181b;
   --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
-
   position: relative;
-
   display: flex;
   flex-direction: column;
+  justify-content:center;
+  align-items:center;
   gap: 0.75rem;
-
   padding: 1rem;
   width: 14rem;
   background-color: var(--bg-card);
-
   border-radius: 1rem;
   margin-top: 0;
 }
@@ -210,17 +208,30 @@
   display:flex;
   justify-content:center;
   flex-direction:column;
+  align-items:center;
+}
 
+.title{
+  text-align:center;
 }
 
 .item-sale{
   padding-top:30px;
   padding-bottom:50px;
 }
-@media (max-width: 600px){
-  
+
+.size.indiv-item{
+  --zinc-800: #2c2c2c;
 }
 
+.item-buy{
+  padding-top:15px;
+  padding-bottom:10px;
+}
+
+.bottom-text{
+  padding-bottom:10px;
+}
 
 .row{
   display:flex;
@@ -4410,8 +4421,14 @@ h3 {
 
 .checkout{
   display:flex;
+  height: 15em;
   flex-flow:row wrap;
-  flex-basis:32.5%
+  flex-basis:32.5%;
+  background-color: #111111;
+  border: 5px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #000;
 }
 
 .tickets{
@@ -6468,6 +6485,10 @@ h6 {
     font-size: 24px;
     margin-bottom: 15px;
   }
+}
+
+.item-shop{
+  background-color:#1a1a1a;
 }
 
 /* line 563, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
