@@ -4420,8 +4420,9 @@ h3 {
 }
 
 .checkout{
+  height: auto;
   display:flex;
-  height: 15em;
+  overflow-y: auto;
   flex-flow:row wrap;
   flex-basis:32.5%;
   background-color: #111111;
