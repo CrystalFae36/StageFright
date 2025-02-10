@@ -4420,16 +4420,19 @@ h3 {
 }
 
 .checkout{
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: auto;
   display:flex;
   overflow-y: auto;
   flex-flow:row wrap;
   flex-basis:32.5%;
-  background-color: #111111;
+  background-color: #202020;
   border: 5px;
   border-style: solid;
   border-radius: 15px;
-  border-color: #000;
+  border-color: #741717;
+  
 }
 
 .tickets{
