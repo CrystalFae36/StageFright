@@ -307,10 +307,10 @@
                                   let messageElement = document.getElementById('message');
                                   
                                   // Check if the email contains '@gmail.com'
-                                  if (email.includes('@gmail.com')) {
+                                  if (email.includes('@')) {
                                     messageElement.innerHTML = 'You have subscribed!';  // Display the message
                                   } else {
-                                    messageElement.innerHTML = 'The email must contain @gmail.com';  // Display the message
+                                    messageElement.innerHTML = 'The email you entere is invalid';  // Display the message
                                   }
                                 });
                               </script>
