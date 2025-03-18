@@ -186,10 +186,25 @@
                             <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send
                                 Message</button>
                                 <script>
-                                    const form = document.getElementById('contactForm');
-                                    const message = document.querySelector('.contact-hide');
-                                    form.addEventListener('submit', function(event) {
-                                        message.style.visibility = "visible";
+                                    document.addEventListener('DOMContentLoaded', function() {
+                                        const form = document.getElementById('contactForm');
+                                        const message = document.querySelector('.contact-hide');
+                                        
+                                        form.addEventListener('submit', function(event) {
+                                            event.preventDefault();
+
+                                            console.log("Form submitted, checking formSend...");
+                                            console.log("Current formSend value:", formSend);
+
+                                            if ($('#contactForm').valid()) {
+                                            formSend = true;
+                                            console.log("True");}
+                                            
+                                            if (formSend === true) {
+                                                message.style.visibility = "visible";
+                                                form.submit();
+                                            }
+                                        });
                                     });
                                 </script>
                         </div>
@@ -236,6 +251,7 @@
                                 <p id="message"></p>
 
                                 <script>
+                                    let formSend = false;
                                     // Add an event listener for form submission
                                     document.getElementById('footer-form').addEventListener('submit', function (event) {
                                         event.preventDefault();  // Prevent the form from submitting

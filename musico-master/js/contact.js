@@ -1,7 +1,9 @@
 $(document).ready(function () {
-
     (function ($) {
         "use strict";
+
+        
+
         // validate contactForm form
         $(function () {
             $('#contactForm').validate({
@@ -40,6 +42,10 @@ $(document).ready(function () {
                     }
                 },
                 submitHandler: function (form) {
+                    if ($('#contactForm').valid()) {
+                        formSend = true;
+                        console.log("True");
+                    }
                     $(form).ajaxSubmit({
                         type: "POST",
                         data: $(form).serialize(),
