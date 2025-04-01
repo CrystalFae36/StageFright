@@ -317,33 +317,30 @@
                             <div class="subscribe-from">
                                 <form id="footer-form">
                                     <div class="input-group">
-                                        <input type="email" name="email" id="emailInput" placeholder="Enter your mail"
-                                            required>
+                                        <input type="email" name="email" id="emailInputFooter" placeholder="Enter your mail" required>
                                         <button type="submit" class="subscribe-button">Subscribe</button>
                                     </div>
                                 </form>
 
                                 <!-- Add a <p> tag to display the result -->
-                                <p id="message"></p>
+                                <p id="footer-message"></p>
 
                                 <script>
                                     // Add an event listener for form submission
                                     document.getElementById('footer-form').addEventListener('submit', function (event) {
                                         event.preventDefault();  // Prevent the form from submitting
 
-                                        let email = document.getElementById('emailInput').value;
-                                        let messageElement = document.getElementById('message');
+                                        let email = document.getElementById('emailInputFooter').value;
+                                        let messageElement = document.getElementById('footer-message');
 
                                         // Check if the email contains '@gmail.com'
                                         if (email.includes('@')) {
-                                            messageElement.innerHTML = 'You have subscribed!';  // Display the message
+                                            messageElement.innerHTML = 'You have subscribed!';
                                         } else {
                                             messageElement.innerHTML = 'The email you entered is invalid';  // Display the message
                                         }
                                     });
                                 </script>
-
-
                             </div>
                             <p class="sub_text">Sign up and get the latest updates on albums, merch, tours, and more!
                             </p>

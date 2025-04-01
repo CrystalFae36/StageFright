@@ -247,7 +247,7 @@
                                 </form>
 
                                 <!-- Add a <p> tag to display the result -->
-                                <p id="message"></p>
+                                <p id="message-footer"></p>
 
                                 <script>
                                     let formSend = false;
@@ -256,7 +256,7 @@
                                         event.preventDefault();  // Prevent the form from submitting
 
                                         let email = document.getElementById('emailInput').value;
-                                        let messageElement = document.getElementById('message');
+                                        let messageElement = document.getElementById('message-footer');
 
                                         // Check if the email contains '@gmail.com'
                                         if (email.includes('@')) {
